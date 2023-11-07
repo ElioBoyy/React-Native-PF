@@ -1,0 +1,19 @@
+* {
+  background-color: #FDF7FD;
+}
+
+#homeview-ms {
+  height: calc(100vh - 90px);
+}
+
+#prenom-nom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  height: auto;
+  width: auto;
+
+  color: #53195D;
+  font-size: 5vw;
+}
