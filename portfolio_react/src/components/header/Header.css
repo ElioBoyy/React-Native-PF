@@ -10,7 +10,22 @@
   flex-wrap: nowrap;
   justify-content: space-between;
 
+  height: 80px;
   z-index: 999999;
+}
+
+#header-bg{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+
+  height: 80px;
+  z-index: 999998;
+
+  background-color: #fdf7fd;
+  opacity: .98;
+  box-shadow: #00000033 0px 00px 10px;
 }
 
 #header-logo-ms {
