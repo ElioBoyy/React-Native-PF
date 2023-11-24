@@ -1,19 +1,194 @@
-* {
-  background-color: #FDF7FD;
+body {
+  background-color: #fdf7fd;
 }
 
 #homeview-ms {
-  height: calc(100vh - 90px);
+  height: calc(100vh);
 }
 
-#prenom-nom {
-  position: absolute;
+#mid {
+  display: flex;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -50%);
   height: auto;
   width: auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
 
-  color: #53195D;
+.prenom-nom {
   font-size: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+  margin: 0;
+}
+
+#separator_name {
+  height: 4vw;
+  border: #53195d solid 1px;
+  margin: 30px;
+
+  transform: rotate(25deg);
+}
+
+#presentation {
+  font-size: 2.3vw;
+  width: 60%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  margin: 0;
+  margin-top: 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#presentation-futur-numerique {
+  font-size: 4.5vw;
+  letter-spacing: 10px;
+
+  margin: 0;
+}
+
+.text-bolder {
+  font-weight: bold;
+}
+
+#exp-pro {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%);
+}
+
+.exp-pro-subsection-title {
+  font-size: 3.6vw;
+  position: relative;
+  width: auto;
+  height: 30vh;
+  background-color: #53195d;
+  color: #fdf7fd;
+  padding-left: 6vw;
+  display: flex;
+  align-items: center;
+}
+
+.exp-pro-subsection-content {
+  width: 70%;
+  margin-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.exp-pro-subsection-content h3 {
+  font-size: 3vw;
+  margin: 0;
+}
+
+.job-article {
+  padding: 50px;
+  margin-bottom: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.job-article:hover {
+  padding: 50px;
+  box-shadow: 30px 30px 43px #e9e3e9, -30px -30px 43px #ffffff;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 100px;
+}
+
+.compagny {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.compagny button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+.compagny img {
+  height: 14vh;
+}
+
+.job {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.libelle-job {
+  font-size: 3vh;
+}
+
+@media (max-width: 1199px) {
+  #mid {
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prenom-nom {
+    font-size: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    margin: 0;
+  }
+
+  #separator_name {
+    width: 100px;
+    height: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    transform: rotate(0deg);
+  }
+
+  #presentation {
+    font-size: 28px;
+    width: 70%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    margin: 0;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #presentation-futur-numerique {
+    font-size: 54px;
+    letter-spacing: 10px;
+
+    margin: 0;
+  }
 }

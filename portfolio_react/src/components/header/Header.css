@@ -9,11 +9,13 @@
   align-items: center;
   flex-wrap: nowrap;
   justify-content: space-between;
+
+  z-index: 999999;
 }
 
 #header-logo-ms {
   width: 5vw;
-  min-width: 100px;
+  min-width: 70px;
   margin: 10px;
 }
 
@@ -32,9 +34,9 @@
   border: none;
 
   font-size: 20px;
-  cursor: pointer;  
+  cursor: pointer;
 
-  color: #53195D;
+  color: #53195d;
 
   /* https://www.radix-ui.com/colors PLUM */
 }
@@ -43,36 +45,54 @@
   height: 8px;
   width: 8px;
   position: absolute;
-  background-color: #53195D;
+  background-color: #53195d;
   border-radius: 50%;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   /* right: 75 Contact && 180 Feed && 308 Life */
 }
 @keyframes dot-slide-about {
-  0%{transform: scale(1);}
-  50%{transform: scale(.7);}
-  100%{transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes dot-slide-feed {
-  0%{transform: scale(1);}
-  50%{transform: scale(.7);}
-  100%{transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes dot-slide-contact {
-  0%{transform: scale(1);}
-  50%{transform: scale(.7);}
-  100%{transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 #selected-btn-dot.about-me {
   right: 325px;
-  animation: dot-slide-about .4s ease-in-out forwards;
+  animation: dot-slide-about 0.4s ease-in-out forwards;
 }
 #selected-btn-dot.feed {
   right: 180px;
-  animation: dot-slide-feed .4s ease-in-out forwards;
+  animation: dot-slide-feed 0.4s ease-in-out forwards;
 }
 #selected-btn-dot.contact {
   right: 75px;
-  animation: dot-slide-contact .4s ease-in-out forwards;
+  animation: dot-slide-contact 0.4s ease-in-out forwards;
 }
