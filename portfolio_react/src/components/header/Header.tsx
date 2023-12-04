@@ -2,18 +2,18 @@ import "./Header.css";
 import { useState } from "react";
 import ToggleButton from "../ToggleButton/ToggleButton";
 
-interface HeaderProps{
+interface HeaderProps {
   toggleLangue: any;
   langue: string
 }
 
-function Header({toggleLangue, langue} : HeaderProps) {
+function Header({ toggleLangue, langue }: HeaderProps) {
 
   const [location, setLocation] = useState('about-me')
 
   return (
     <header>
-      <div id="header-bg"/>
+      <div id="header-bg" />
       <div id="header">
         <img
           src="../public/ms.svg"
@@ -22,8 +22,8 @@ function Header({toggleLangue, langue} : HeaderProps) {
           className="header-disp"
         />
         <div>
-          <ToggleButton toggleLangue={toggleLangue} langue={langue} ></ToggleButton>
           <div id="header-btns-div" className="header-disp">
+            <ToggleButton toggleLangue={toggleLangue} langue={langue} ></ToggleButton>
             <button className="header-btns-btn" onClick={() => setLocation('about-me')} >A propos de moi</button>
             <button className="header-btns-btn" onClick={() => setLocation('feed')} >Feed</button>
             <button className="header-btns-btn" onClick={() => setLocation('contact')} >Contact</button>

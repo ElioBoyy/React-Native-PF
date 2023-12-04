@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
 import ukImage from '../../../public/uk.png';
 import franceImage from '../../../public/france.png';
+import './ToggleButton.css'
 
 interface ToggleButtonProps{
     toggleLangue: any;
@@ -15,7 +15,7 @@ const ToggleButton = ({toggleLangue, langue} : ToggleButtonProps) => {
       };
   
     return (
-        <button onClick={toggleLangue}><img src={getImage()} alt="Drapeau" style={{ width: '50px', height: '50px' }} /></button>
+        <button className='btn-toogle-lang' onClick={toggleLangue}><img className='btn-toogle-lang-img' src={getImage()} alt="Drapeau" /></button>
     );
   };
   
