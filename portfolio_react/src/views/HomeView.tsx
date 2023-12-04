@@ -1,6 +1,9 @@
 import "./HomeView.css";
+import { data } from './data'
 
-function HomePage() {
+function HomeView({ langue }: { langue: string }) {
+  
+
   return (
     <div>
       <section id="homeview-ms">
@@ -12,13 +15,17 @@ function HomePage() {
       </section>
       <section id="homeview-content">
         <div id="presentation">
-          <p>
-            <span className="text-bolder">Développeur étudiant</span> en 3e
-            année de BUT informatique, passionné par la création de{" "}
-            <span className="text-bolder">sites web</span> et d'
-            <span className="text-bolder">applications</span>, prêt à créer le
-          </p>
-          <p id="presentation-futur-numerique">Futur Numérique</p>
+          {langue === "fr" ? (
+            <>
+              <p dangerouslySetInnerHTML={{ __html: data.fr.presentation }}></p>
+              <p dangerouslySetInnerHTML={{ __html: data.fr.presentationHL }}></p>
+            </>
+          ) : (
+            <>
+              <p dangerouslySetInnerHTML={{ __html: data.en.presentation }}></p>
+              <p dangerouslySetInnerHTML={{ __html: data.en.presentationHL }}></p>
+              </>
+            )}
         </div>
 
         <div id="exp-pro">
@@ -32,7 +39,7 @@ function HomePage() {
           </div>
 
           <div className="exp-pro-subsection-content">
-            <div id="right-exp-pro"/>
+            <div id="right-exp-pro" />
             <div>
               <article className="job-article">
                 <div className="compagny">
@@ -77,4 +84,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomeView;

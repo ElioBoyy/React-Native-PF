@@ -1,7 +1,13 @@
 import "./Header.css";
 import { useState } from "react";
+import ToggleButton from "../ToggleButton/ToggleButton";
 
-function Header() {
+interface HeaderProps{
+  toggleLangue: any;
+  langue: string
+}
+
+function Header({toggleLangue, langue} : HeaderProps) {
 
   const [location, setLocation] = useState('about-me')
 
@@ -16,6 +22,7 @@ function Header() {
           className="header-disp"
         />
         <div>
+          <ToggleButton toggleLangue={toggleLangue} langue={langue} ></ToggleButton>
           <div id="header-btns-div" className="header-disp">
             <button className="header-btns-btn" onClick={() => setLocation('about-me')} >A propos de moi</button>
             <button className="header-btns-btn" onClick={() => setLocation('feed')} >Feed</button>
