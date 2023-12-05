@@ -1,15 +1,9 @@
 import "./HomeView.css";
 import { data } from '../data/data'
-import React, { useState } from 'react';
+import Job from '../components/Job/Job'
 
 function HomeView({ langue }: { langue: string }) {
 
-  const [buttonText, setButtonText] = useState("+");
-
-  const handleClick = () => {
-    setButtonText((prevText) => (prevText === "+" ? "-" : "+"));
-  };
-  
   return (
     <div>
       <section id="homeview-ms">
@@ -53,23 +47,7 @@ function HomeView({ langue }: { langue: string }) {
                 <div>
                   {
                     data.fr["job-articles"].map((job, index) => (
-                      <article className="job-article" key={index}>
-                        <div className="compagny">
-                          <h3>{job[0]}</h3>
-                          <a href={job[2]} target="_blank">
-                            <img
-                              src={job[1]}
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <div className="job">
-                          <p className="libelle-job">{job[3]}</p>
-                          <p dangerouslySetInnerHTML={{ __html: job[4]}}></p>
-                        </div>
-                        <div></div>
-                        <button className="open_more_infos" onClick={handleClick}>{buttonText}</button>
-                      </article>
+                      <Job job={job} key={index}></Job>
                     )
                     )
                   }
@@ -78,24 +56,9 @@ function HomeView({ langue }: { langue: string }) {
                 <div>
                   {
                     data.en["job-articles"].map((job, index) => (
-                      <article className="job-article" key={index}>
-                        <div className="compagny">
-                          <h3>{job[0]}</h3>
-                          <a href={job[2]} target="_blank">
-                            <img
-                              src={job[1]}
-                              alt=""
-                            />
-                          </a>
-                        </div>
-                        <div className="job">
-                          <p className="libelle-job">{job[3]}</p>
-                          <p dangerouslySetInnerHTML={{ __html: job[4]}}></p>
-                        </div>
-                        <div></div>
-                        <button className="open_more_infos" onClick={handleClick}>{buttonText}</button>
-                      </article>
-                    ))
+                      <Job job={job} key={index}></Job>
+                    )
+                    )
                   }
                 </div>
               )

@@ -1,0 +1,105 @@
+.job-article {
+    padding: 50px;
+    margin-bottom: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.job-article:hover {
+    padding: 50px;
+    box-shadow: 30px 30px 43px #e9e3e9, -30px -30px 43px #ffffff;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 100px;
+}
+
+.compagny {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compagny button {
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+}
+
+.compagny img {
+    height: 14vh;
+}
+
+.job {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.libelle-job {
+    font-size: 3vh;
+}
+
+.open_more_infos {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 30px;
+    transform: translateY(15px);
+}
+
+.content {
+    margin-top: 40px;
+    padding-bottom: 0px;
+    border: #53195d;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    max-height: 0;
+    overflow: hidden;
+
+    transition: padding-bottom 100ms ease, max-height 600ms ease-in-out;
+}
+
+.content.active {
+    max-height: 1000px;
+    padding-bottom: 30px;
+    transition: padding-bottom 100ms ease, max-height 600ms ease-in-out;
+}
+
+.github_badges {
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.p_badges {
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #53195d;
+    color: #e9e3e9;
+    width: fit-content;
+}
+
+.flex-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 95%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
