@@ -14,7 +14,7 @@
   z-index: 999999;
 }
 
-#header-bg{
+#header-bg {
   position: fixed;
   top: 0px;
   left: 0;
@@ -24,12 +24,12 @@
   z-index: 999998;
 
   background-color: #fdf7fd;
-  opacity: .98;
+  opacity: 0.98;
   box-shadow: #00000033 0px 00px 10px;
 }
 
 #header-logo-ms {
-  width: 5vw;
+  width: 90px;
   min-width: 70px;
   margin: 10px;
 }

@@ -1,105 +1,134 @@
 .job-article {
-    padding: 50px;
-    margin-bottom: 100px;
-    transition: all 0.2s ease-in-out;
+  padding: 50px;
+  margin-bottom: 100px;
+  transition: all 0.2s ease-in-out;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .job-article:hover {
-    padding: 50px;
-    box-shadow: 30px 30px 43px #e9e3e9, -30px -30px 43px #ffffff;
-    transition: all 0.2s ease-in-out;
-    margin-bottom: 100px;
+  padding: 50px;
+  box-shadow: 30px 30px 43px #e9e3e9, -30px -30px 43px #ffffff;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 100px;
 }
 
 .compagny {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .compagny button {
-    border: transparent;
-    background: transparent;
-    cursor: pointer;
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
 }
 
 .compagny img {
-    height: 14vh;
+  height: 14vh;
+}
+
+.compagny h2 {
+  font-size: 3vw;
 }
 
 .job {
-    width: 90%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .libelle-job {
-    font-size: 3vh;
+  font-size: 3vh;
 }
 
 .open_more_infos {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    position: relative;
-    left: 50%;
-    margin-top: 20px;
-    padding: 10px;
-    font-size: 30px;
-    transform: translateY(15px);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  left: 50%;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 30px;
+  transform: translateY(15px);
 }
 
 .content {
-    margin-top: 40px;
-    padding-bottom: 0px;
-    border: #53195d;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
-    position: relative;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%);
-    max-height: 0;
-    overflow: hidden;
+  margin-top: 40px;
+  border: #53195d;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  position: relative;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  max-height: 0;
+  overflow: hidden;
 
-    transition: padding-bottom 100ms ease, max-height 600ms ease-in-out;
+  transition: max-height 600ms ease-in-out;
 }
 
 .content.active {
-    max-height: 1000px;
-    padding-bottom: 30px;
-    transition: padding-bottom 100ms ease, max-height 600ms ease-in-out;
+  max-height: 1000px;
+  transition: max-height 600ms ease-in-out;
 }
 
 .github_badges {
-    height: 40px;
-    margin: 0px;
-    padding: 0px;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
 }
 
 .p_badges {
-    height: 40px;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #53195d;
-    color: #e9e3e9;
-    width: fit-content;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #53195d;
+  color: #e9e3e9;
+  width: fit-content;
+
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
 }
 
 .flex-skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    width: 95%;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 95%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.flex-skills a p {
+  color: #e9e3e9;
+  text-decoration: underline #e9e3e9;
+  background-color: #53195d;
+  height: 40px;
+  transform: translate(0, -10px);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (max-width: 2100px) {
+  .compagny img {
+    width: 30vw;
+  }
 }
