@@ -96,6 +96,19 @@ body {
   justify-content: space-between;
 }
 
+#chevrons-place {
+  transform: skew(0deg, -1.5deg);
+  width: 95%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chevron-img {
+  height: 50px;
+  cursor: pointer;
+}
+
 .text-parallelepiped {
   font-size: 3vw;
   background-color: #53195d;

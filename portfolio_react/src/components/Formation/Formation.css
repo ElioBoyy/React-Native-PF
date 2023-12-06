@@ -1,0 +1,77 @@
+##exp-pro {
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+  }
+  
+  .parallelepiped {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #53195d;
+    transform: skew(0deg, 1.5deg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  .div-parallelepiped {
+    position: relative;
+    height: 90%;
+    width: 80%;
+    transform: skew(0deg, -1.5deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .text-parallelepiped {
+    font-size: 3vw;
+    background-color: #53195d;
+    color: #fdf7fd;
+  }
+  
+  .img-parallelepiped {
+    width: 16%;
+  } {
+    position: relative;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+}
+
+.parallelepiped-forma {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #53195d;
+    transform: skew(0deg, 1.5deg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.div-parallelepiped-forma {
+    position: relative;
+    height: 90%;
+    width: 80%;
+    transform: skew(0deg, -1.5deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-parallelepiped-forma {
+    font-size: 3vw;
+    background-color: #53195d;
+    color: #fdf7fd;
+}
+
+.img-parallelepiped-forma {
+    width: 16%;
+}

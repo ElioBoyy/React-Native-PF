@@ -4,9 +4,10 @@ import { urlRegex } from "../../data/techno";
 
 interface JobProps {
   job: any;
+  langage: any;
 }
 
-function Job({ job }: JobProps) {
+function Job({ job, langage }: JobProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const [buttonText, setButtonText] = useState("+");
@@ -93,9 +94,17 @@ function Job({ job }: JobProps) {
                 ) : (
                   <a href={techno} target="_blank" key={techno}>
                     {regexDrive.test(techno) ? (
-                      <p>Visitez le repo GitHub</p>
+                      langage === "fr" ? (
+                        <p>Visiter le repo GitHub</p>
+                      ) : (
+                        <p>Visit the GitHub repo</p>
+                      )
                     ) : (
-                      <p>Télécharger ma lettre de recommandation</p>
+                      langage === "fr" ? (
+                        <p>Download my reference letter</p>
+                      ) : (
+                        <p>Download my </p>
+                      )
                     )}
                   </a>
                 )

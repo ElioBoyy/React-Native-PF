@@ -1,6 +1,8 @@
 import "./HomeView.css";
 import { data } from '../data/data'
 import Job from '../components/Job/Job'
+import Formation from "../components/Formation/Formation";
+
 
 function HomeView({ langue }: { langue: string }) {
 
@@ -30,6 +32,10 @@ function HomeView({ langue }: { langue: string }) {
 
         <div id="exp-pro">
           <div className="parallelepiped">
+            <div id="chevrons-place">
+              <img src="../../public/chevron-left.svg" alt="" className="chevron-img" />
+              <img src="../../public/chevron-right.svg" alt="" className="chevron-img" />
+            </div>
             <div className="div-parallelepiped">
               {langue === "fr" ? (
                 <p className="text-parallelepiped" dangerouslySetInnerHTML={{ __html: data.fr["text-parallelepiped"] }}></p>
@@ -47,7 +53,7 @@ function HomeView({ langue }: { langue: string }) {
                 <div>
                   {
                     data.fr["job-articles"].map((job, index) => (
-                      <Job job={job} key={index}></Job>
+                      <Job job={job} langage={langue} key={index}></Job>
                     )
                     )
                   }
@@ -56,7 +62,7 @@ function HomeView({ langue }: { langue: string }) {
                 <div>
                   {
                     data.en["job-articles"].map((job, index) => (
-                      <Job job={job} key={index}></Job>
+                      <Job job={job} langage={langue} key={index}></Job>
                     )
                     )
                   }
@@ -67,6 +73,7 @@ function HomeView({ langue }: { langue: string }) {
             </div>
           </div>
         </div>
+
       </section>
     </div>
   );
