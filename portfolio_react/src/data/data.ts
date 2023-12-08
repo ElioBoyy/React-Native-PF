@@ -6,7 +6,7 @@ import { technosTableau } from "./techno";
 export const data = {
   fr: {
     presentation:
-      "<span class='text-bolder'>Développeur étudiant</span> en 3e année de BUT informatique, passionné par la création de <span class='text-bolder'>sites web</span> et d'<span class='text-bolder'>applications</span>, prêt à céer le",
+      "<span class='text-bolder'>Développeur étudiant</span> en 3e année de BUT informatique, passionné par la création de <span class='text-bolder'>sites web</span> et d'<span class='text-bolder'>applications</span>, prêt à créer le",
     presentationHL: "<p id='presentation-futur-numerique'>Futur Numérique</p>",
     "text-parallelepiped": "Mes experiences professionnelles",
     "job-articles": [
@@ -165,9 +165,9 @@ export const data = {
           technosTableau.postgresql,
           technosTableau.git,
           technosTableau.github,
-          ],
-          ["Agile Methods", "Teamwork", "Project Management", "Rigor"],
-          ["https://github.com/lorrisc/Miliboo"],
+        ],
+        ["Agile Methods", "Teamwork", "Project Management", "Rigor"],
+        ["https://github.com/lorrisc/Miliboo"],
       ],
       [
         "C-Gastronomie",

@@ -134,6 +134,31 @@ body {
   margin: 0;
 }
 
+@media (max-height: 600px) {
+  .img-parallelepiped {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .exp-pro-subsection-content {
+    width: 100%;
+  }
+
+  .img-parallelepiped {
+    width: 180px;
+  }
+
+  .div-parallelepiped {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div-parallelepiped p {
+    display: none;
+  }
+}
+
 @media (max-width: 1199px) {
   #mid {
     display: flex;

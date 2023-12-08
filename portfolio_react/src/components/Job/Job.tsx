@@ -37,7 +37,11 @@ function Job({ job, langage }: JobProps) {
       <div className={`content ${isExpanded ? "active" : ""}`}>
         {job[5].length > 0 && (
           <>
-            <h2>Hard skills</h2>
+            {langage === "fr" ? (
+              <h2>Compétences techniques</h2>
+            ) : (
+              <h2>Hard skills</h2>
+            )}
             <div className="flex-skills">
               {job[5].map((techno: string) =>
                 urlRegex.test(techno) ? (
@@ -60,7 +64,11 @@ function Job({ job, langage }: JobProps) {
 
         {job[6].length > 0 && (
           <>
-            <h2>Soft skills</h2>
+            {langage === "fr" ? (
+              <h2>Compétences générales</h2>
+            ) : (
+              <h2>Soft skills</h2>
+            )}
             <div className="flex-skills">
               {job[6].map((techno: string) =>
                 urlRegex.test(techno) ? (
@@ -83,7 +91,7 @@ function Job({ job, langage }: JobProps) {
 
         {job[7] && job[7].length > 0 && (
           <>
-            <h2>Pour compléter</h2>
+            {langage === "fr" ? <h2>Pour compléter</h2> : <h2>To complete</h2>}
             <div className="flex-skills">
               {job[7].map((techno: string) =>
                 urlRegex.test(techno) ? (
@@ -99,12 +107,10 @@ function Job({ job, langage }: JobProps) {
                       ) : (
                         <p>Visit the GitHub repo</p>
                       )
+                    ) : langage === "fr" ? (
+                      <p>Télécharger ma lettre de recommandation</p>
                     ) : (
-                      langage === "fr" ? (
-                        <p>Download my reference letter</p>
-                      ) : (
-                        <p>Download my </p>
-                      )
+                      <p>Download my reference letter</p>
                     )}
                   </a>
                 )
