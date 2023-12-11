@@ -1,4 +1,5 @@
 import { data } from "../../data/data";
+import { ToggleLanguage } from "../ToggleLanguage/ToggleLanguage";
 import "./Header.css";
 import { useEffect, useState } from "react";
 
@@ -7,7 +8,8 @@ interface HeaderProps {
   langue: string;
 }
 
-function Header({ langue }: HeaderProps) {
+function Header({ toggleLangue, langue }: HeaderProps) {
+
   const [location, setLocation] = useState("about-me");
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [clickedState, setClickedState] = useState("notClicked");
@@ -44,26 +46,26 @@ function Header({ langue }: HeaderProps) {
             />
             <div>
               <div id="header-btns-div" className="header-disp">
+                <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
                 <button
                   className="header-btns-btn"
-                  dangerouslySetInnerHTML={{__html : data.fr["header"][0]}}
+                  dangerouslySetInnerHTML={{ __html: data.fr["header"][0] }}
                   onClick={() => setLocation("aboute")}
-                >
-                </button>
+                ></button>
+
                 <button
                   className="header-btns-btn"
-                  dangerouslySetInnerHTML={{__html : data.fr["header"][1]}}
+                  dangerouslySetInnerHTML={{ __html: data.fr["header"][1] }}
                   onClick={() => setLocation("feed")}
                 >
-                  Feed
+
                 </button>
+
                 <button
                   className="header-btns-btn"
-                  dangerouslySetInnerHTML={{__html : data.fr["header"][2]}}
+                  dangerouslySetInnerHTML={{ __html: data.fr["header"][2] }}
                   onClick={() => setLocation("contact")}
-                >
-                  Contact
-                </button>
+                ></button>
               </div>
               <div
                 id="selected-btn-dot"
@@ -71,8 +73,8 @@ function Header({ langue }: HeaderProps) {
                   location === "about-me"
                     ? "about-me"
                     : location === "feed"
-                    ? "feed"
-                    : "contact"
+                      ? "feed"
+                      : "contact"
                 }
               />
             </div>
