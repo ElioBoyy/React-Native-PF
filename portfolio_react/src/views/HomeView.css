@@ -1,5 +1,6 @@
 body {
   background-color: #fdf7fd;
+  overflow-x: hidden;
 }
 
 #homeview-ms {
@@ -84,6 +85,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
+  flex-direction: column-reverse;
 }
 
 .div-parallelepiped {
@@ -97,16 +99,23 @@ body {
 }
 
 #chevrons-place {
+  position: relative;
+  border: #fdf7fd 1px solid;
+  background-color: transparent;
   transform: skew(0deg, -1.5deg);
-  width: 95%;
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.chevron-img {
-  height: 50px;
+#chevrons-place button {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+}
+
+.fontColor {
+  color: #fdf7fd;
+  font-size: 20px;
+  margin: 10px;
 }
 
 .text-parallelepiped {
@@ -127,6 +136,9 @@ body {
   transform: translate(-50%);
   display: flex;
   flex-direction: row-reverse;
+
+  position: absolute;
+  transition: left 0.5s ease;
 }
 
 .exp-pro-subsection-content h3 {
@@ -134,9 +146,35 @@ body {
   margin: 0;
 }
 
+.forma-subsection-content {
+  width: 70%;
+  margin-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: row-reverse;
+
+  position: absolute;
+  transition: left 0.5s ease;
+}
+
+.forma-subsection-content h3 {
+  font-size: 3vw;
+  margin: 0;
+}
+
 @media (max-height: 600px) {
   .img-parallelepiped {
     height: 35vh;
+  }
+
+  .parallelepiped {
+    height: 240px;
+  }
+
+  #chevrons-place {
+    margin-bottom: 50px;
   }
 }
 

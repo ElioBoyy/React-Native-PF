@@ -1,13 +1,13 @@
+import { data } from "../../data/data";
 import "./Header.css";
-import React, { useEffect, useState } from "react";
-import ToggleButton from "../ToggleButton/ToggleButton";
+import { useEffect, useState } from "react";
 
 interface HeaderProps {
   toggleLangue: any;
   langue: string;
 }
 
-function Header({ toggleLangue, langue }: HeaderProps) {
+function Header({ langue }: HeaderProps) {
   const [location, setLocation] = useState("about-me");
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [clickedState, setClickedState] = useState("notClicked");
@@ -44,24 +44,22 @@ function Header({ toggleLangue, langue }: HeaderProps) {
             />
             <div>
               <div id="header-btns-div" className="header-disp">
-                <ToggleButton
-                  toggleLangue={toggleLangue}
-                  langue={langue}
-                ></ToggleButton>
                 <button
                   className="header-btns-btn"
-                  onClick={() => setLocation("about-me")}
+                  dangerouslySetInnerHTML={{__html : data.fr["header"][0]}}
+                  onClick={() => setLocation("aboute")}
                 >
-                  A propos de moi
                 </button>
                 <button
                   className="header-btns-btn"
+                  dangerouslySetInnerHTML={{__html : data.fr["header"][1]}}
                   onClick={() => setLocation("feed")}
                 >
                   Feed
                 </button>
                 <button
                   className="header-btns-btn"
+                  dangerouslySetInnerHTML={{__html : data.fr["header"][2]}}
                   onClick={() => setLocation("contact")}
                 >
                   Contact

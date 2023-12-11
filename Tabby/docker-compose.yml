@@ -8,4 +8,4 @@ services:
     volumes:
       - "$HOME/.tabby:/data"
     ports:
-      - 8080:8080
+      - 8008:8008

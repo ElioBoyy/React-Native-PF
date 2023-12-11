@@ -8,7 +8,7 @@ export const data = {
     presentation:
       "<span class='text-bolder'>Développeur étudiant</span> en 3e année de BUT informatique, passionné par la création de <span class='text-bolder'>sites web</span> et d'<span class='text-bolder'>applications</span>, prêt à créer le",
     presentationHL: "<p id='presentation-futur-numerique'>Futur Numérique</p>",
-    "text-parallelepiped": "Mes experiences professionnelles",
+    "text-parallelepiped": ["Mes experiences professionnelles", "Mon parcours scolaire"],
     "job-articles": [
       [
         "Allegro Microsystems",
@@ -94,12 +94,13 @@ export const data = {
         ],
       ],
     ],
+    "header": ["A propos", "Fil d'actualité", "Contact"]
   },
   en: {
     presentation:
       "Third-year <span class='text-bolder'>computer science student</span>, passionate about creating <span class='text-bolder'>websites</span> and <span class='text-bolder'>applications</span>, ready to shape the",
     presentationHL: "<p id='presentation-futur-numerique'>Digital Future</p>",
-    "text-parallelepiped": "My professional experience",
+    "text-parallelepiped": ["My professional experience", "My school career"],
     "job-articles": [
       [
         "Allegro Microsystems",
@@ -185,5 +186,6 @@ export const data = {
         ],
       ],
     ],
+    "header": ["Aboute", "Feed", "Contact"]
   },
 };
