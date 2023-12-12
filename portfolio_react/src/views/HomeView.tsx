@@ -2,6 +2,7 @@ import "./HomeView.css";
 import { data } from '../data/data'
 import Job from '../components/Job/Job'
 import { useState } from "react";
+import Formation from "../components/Formation/Formation";
 
 function HomeView({ langue }: { langue: string }) {
 
@@ -9,16 +10,13 @@ function HomeView({ langue }: { langue: string }) {
   const [formaLeft, setFormaLeft] = useState('150%');
   const [controlFormaOrExpProText, setControlFormaOrExpProText] = useState(0);
 
-  const handleChevronClick = () => {
+  const handleBtnClick = () => {
     // Mettez à jour les valeurs left en fonction de votre logique de transition
     setExpProLeft(expProLeft === '50%' ? '-50%' : '50%');
     setFormaLeft(formaLeft === '150%' ? '50%' : '150%');
     setControlFormaOrExpProText(controlFormaOrExpProText === 0 ? 1 : 0);
 
-    console.log(expProLeft)
-    console.log(formaLeft)
   };
-
 
   return (
     <div>
@@ -47,7 +45,7 @@ function HomeView({ langue }: { langue: string }) {
         <div id="exp-pro">
           <div className="parallelepiped">
             <div id="chevrons-place">
-              <button onClick={handleChevronClick}>{langue === "fr" ? (
+              <button onClick={handleBtnClick}>{langue === "fr" ? (
                 <>
                   {expProLeft === '50%' ? (
                     <p className="fontColor">Mon parcours scolaire</p>
@@ -75,63 +73,52 @@ function HomeView({ langue }: { langue: string }) {
             </div>
           </div>
 
-          <div className="exp-pro-subsection-content" style={{ left: expProLeft }} >
-            <div>
-
-              {langue === "fr" ? (
-                <div>
-                  {
-                    data.fr["job-articles"].map((job, index) => (
-                      <Job job={job} langage={langue} key={index}></Job>
-                    )
-                    )
-                  }
-                </div>
-              ) : (
-                <div>
-                  {
-                    data.en["job-articles"].map((job, index) => (
-                      <Job job={job} langage={langue} key={index}></Job>
-                    )
-                    )
-                  }
-                </div>
-              )
-              }
-
-            </div>
+          <div className="exp-pro-subsection-content" style={{ left: expProLeft, display: controlFormaOrExpProText === 0 ? "flex" : "none" }} >
+            {langue === "fr" ? (
+              <div>
+                {
+                  data.fr["job-articles"].map((job, index) => (
+                    <Job job={job} langage={langue} key={index}></Job>
+                  )
+                  )
+                }
+              </div>
+            ) : (
+              <div>
+                {
+                  data.en["job-articles"].map((job, index) => (
+                    <Job job={job} langage={langue} key={index}></Job>
+                  )
+                  )
+                }
+              </div>
+            )
+            }
           </div>
 
-          <div className="forma-subsection-content" style={{ left: formaLeft }} >
-            <div>
-
-              {langue === "en" ? (
-                <div>
-                  {
-                    data.fr["job-articles"].map((job, index) => (
-                      <Job job={job} langage={langue} key={index}></Job>
-                    )
-                    )
-                  }
-                </div>
-              ) : (
-                <div>
-                  {
-                    data.en["job-articles"].map((job, index) => (
-                      <Job job={job} langage={langue} key={index}></Job>
-                    )
-                    )
-                  }
-                </div>
-              )
-              }
-
-            </div>
+          <div className="forma-subsection-content" style={{ left: formaLeft, display: controlFormaOrExpProText === 1 ? "flex" : "none" }} >
+            {langue === "fr" ? (
+              <div>
+                {
+                  data.fr["formation"].map((forma: any, index: any) => (
+                    <Formation forma={forma} keyp={index} length={data.fr["formation"].length} key={index} />
+                  ))
+                }
+              </div>
+            ) : (
+              <div>
+                {
+                  data.en["formation"].map((forma: any, index: any) => (
+                    <Formation forma={forma} keyp={index} length={data.en["formation"].length} key={index} />
+                  ))
+                }
+              </div>
+            )}
           </div>
         </div>
 
-      </section>
-    </div>
+      </section >
+    </div >
   );
 }
 

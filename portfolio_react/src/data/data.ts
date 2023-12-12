@@ -94,7 +94,58 @@ export const data = {
         ],
       ],
     ],
-    "header": ["A propos", "Fil d'actualité", "Contact"]
+    "header": ["A propos", "Fil d'actualité", "Contact"],
+    "formation": [
+      [
+        "Université Savoie Mont-Blanc, Annecy",
+        "Bachelor Universitaire Technologique d'informatique",
+        [
+          "<span class='text-bolder'>Niveau</span> : Titulaire du diplôme de deuxième année (BUT) en informatique, actuellement en troisième année pour obtenir le Bachelor (BUT).",
+          "<span class='text-bolder'>Activités et Associations</span> : Vice-secrétaire du syndicat étudiant 2022-2023.",
+          "Délégué 2022-2023.",
+        ],
+        [
+          2024,
+          2021,
+        ],
+        [
+          "Localiser",
+          "https://www.google.com/maps/place/Universit%C3%A9+Savoie+Mont-Blanc+-+Campus+d'Annecy/@45.9209062,6.1537701,15z/data=!4m2!3m1!1s0x0:0x24dc9c9435c40688?sa=X&ved=2ahUKEwjPg-7qmoqDAxWJVqQEHfLJCeoQ_BJ6BAhIEAA",
+        ],
+      ],
+      [
+        "EPITA, Lyon",
+        "Cycle préparatoire dans la même école d'ingénieur",
+        [
+          "<span class='text-bolder'>Niveau</span> : Réorienté après la première année.",
+        ],
+        [
+          2021,
+          2020,
+        ],
+        [
+          "Localiser",
+          "https://www.google.com/maps/place/Ecole+d'ing%C3%A9nieurs+informatique+Lyon+-+EPITA/@45.7548868,4.854048,17z/data=!3m2!4b1!5s0x47f4ea653de874b9:0xf7cbb4c9c04d6fa9!4m6!3m5!1s0x47f4ebb2a51fa845:0x1f16a04587235750!8m2!3d45.7548832!4d4.8589189!16s%2Fg%2F11c6cy422l?entry=ttu",
+        ],
+      ],
+      [
+        "Lycée Claude Louis Berthollet, Annecy",
+        "Baccalauréat général, Sciences physiques",
+        [
+          "<span class='text-bolder'>Niveau</span> : Diplômé avec un baccalauréat général - Option scientifique - Spécialisation en physique.",
+          "<span class='text-bolder'>Activités et Associations</span> : Vice-président de la Maison des lycéens.",
+          "Délégué 2017-2020.",
+        ],
+        [
+          2020,
+          2016,
+        ],
+        [
+          "Localiser",
+          "https://www.google.com/maps/place/Lyc%C3%A9e+Berthollet/@45.9062315,6.128072,15z/data=!4m6!3m5!1s0x478b8ff1642ad2b5:0xe65eed4248f6dfda!8m2!3d45.9062315!4d6.128072!16s%2Fg%2F120z_cdt?entry=ttu",
+        ],
+      ],
+    ],
   },
   en: {
     presentation:
@@ -186,6 +237,57 @@ export const data = {
         ],
       ],
     ],
-    "header": ["Aboute", "Feed", "Contact"]
+    "header": ["About", "Feed", "Contact"],
+    "formation": [
+      [
+        "Université Savoie Mont-Blanc, Annecy",
+        "Bachelor in Computer Science",
+        [
+          "<span class='text-bolder'>Level</span> : Holder of the 2nd year's degree in Computer Science, currently in the 3rd year to obtain the Bachelor's degree.",
+          "<span class='text-bolder'>Activities and Associations</span> : Vice-Secretary of the Student Union 2022-2023.",
+          "Delegate 2022-2023."
+        ],
+        [
+          2024,
+          2021,
+        ],
+        [
+          "Locate",
+          "https://www.google.com/maps/place/Universit%C3%A9+Savoie+Mont-Blanc+-+Campus+d'Annecy/@45.9209062,6.1537701,15z/data=!4m2!3m1!1s0x0:0x24dc9c9435c40688?sa=X&ved=2ahUKEwjPg-7qmoqDAxWJVqQEHfLJCeoQ_BJ6BAhIEAA",
+        ],
+      ],
+      [
+        "EPITA, Lyon",
+        "Preparatory cycle at the same engineering school",
+        [
+          "<span class='text-bolder'>Level</span> : Reoriented after the first year."
+        ],
+        [
+          2021,
+          2020,
+        ],
+        [
+          "Locate",
+          "https://www.google.com/maps/place/Ecole+d'ing%C3%A9nieurs+informatique+Lyon+-+EPITA/@45.7548868,4.854048,17z/data=!3m2!4b1!5s0x47f4ea653de874b9:0xf7cbb4c9c04d6fa9!4m6!3m5!1s0x47f4ebb2a51fa845:0x1f16a04587235750!8m2!3d45.7548832!4d4.8589189!16s%2Fg%2F11c6cy422l?entry=ttu",
+        ],
+      ],
+      [
+        "High school Claude Louis Berthollet, Annecy",
+        "General Baccalaureate, Physical Sciences",
+        [
+          "<span class='text-bolder'>Level</span> : Graduated with a General Baccalaureate - Scientific Option - Specialization in Physics.",
+          "<span class='text-bolder'>Activities and Associations</span> : Vice-President of the Student House.",
+          "Delegate 2017-2020."
+        ],
+        [
+          2020,
+          2016,
+        ],
+        [
+          "Locate",
+          "https://www.google.com/maps/place/Lyc%C3%A9e+Berthollet/@45.9062315,6.128072,15z/data=!4m6!3m5!1s0x478b8ff1642ad2b5:0xe65eed4248f6dfda!8m2!3d45.9062315!4d6.128072!16s%2Fg%2F120z_cdt?entry=ttu",
+        ],
+      ],
+    ],
   },
 };

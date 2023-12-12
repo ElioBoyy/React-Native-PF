@@ -131,13 +131,12 @@ body {
 .exp-pro-subsection-content {
   width: 70%;
   margin-top: 100px;
-  position: relative;
   left: 50%;
   transform: translate(-50%);
   display: flex;
   flex-direction: row-reverse;
 
-  position: absolute;
+  position: relative;
   transition: left 0.5s ease;
 }
 
@@ -149,13 +148,12 @@ body {
 .forma-subsection-content {
   width: 70%;
   margin-top: 100px;
-  position: relative;
   left: 50%;
   transform: translate(-50%);
   display: flex;
   flex-direction: row-reverse;
 
-  position: absolute;
+  position: relative;
   transition: left 0.5s ease;
 }
 
@@ -180,6 +178,10 @@ body {
 
 @media (max-width: 1000px) {
   .exp-pro-subsection-content {
+    width: 100%;
+  }
+
+  .forma-subsection-content{
     width: 100%;
   }
 
