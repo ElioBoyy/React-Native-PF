@@ -168,3 +168,23 @@
   padding-top: 70px;
   padding-right: 100px;
 }
+
+.underline-on-hover {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline-on-hover::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Épaisseur de la ligne de soulignement */
+  bottom: 0;
+  left: 0;
+  background-color: #53195d; /* Couleur du soulignement initial */
+  transition: width 0.3s ease; /* Transition animée */
+}
+
+.underline-on-hover:hover::before {
+  width: 100%;
+}

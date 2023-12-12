@@ -24,7 +24,7 @@
 }
 
 .forma-content h3 {
-  font-size: 3vh;  
+  font-size: 3vh;
 }
 
 .forma-content p {
@@ -40,8 +40,22 @@
   padding: 0;
 }
 
-@media (max-width: 1600px){
+@media (max-width: 1600px) {
   .forma-content {
     width: 100%;
+  }
+}
+
+@media (max-width: 800px) or (max-height: 600px) {
+  .forma-content h2 {
+    font-size: 40px;
+  }
+
+  .job p {
+    font-size: 16px;
+  }
+
+  .job h3 {
+    font-size: 22px;
   }
 }

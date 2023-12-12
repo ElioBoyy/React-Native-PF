@@ -9,7 +9,6 @@ interface HeaderProps {
 }
 
 function Header({ toggleLangue, langue }: HeaderProps) {
-
   const [location, setLocation] = useState("about-me");
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [clickedState, setClickedState] = useState("notClicked");
@@ -45,36 +44,57 @@ function Header({ toggleLangue, langue }: HeaderProps) {
               className="header-disp"
             />
             <div>
-              <div id="header-btns-div" className="header-disp">
-                <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
-                <button
-                  className="header-btns-btn"
-                  dangerouslySetInnerHTML={{ __html: data.fr["header"][0] }}
-                  onClick={() => setLocation("aboute")}
-                ></button>
+              {langue === "fr" ? (
+                <div id="header-btns-div" className="header-disp">
+                  <button
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.fr["header"][0] }}
+                    onClick={() => setLocation("aboute")}
+                  ></button>
 
-                <button
-                  className="header-btns-btn"
-                  dangerouslySetInnerHTML={{ __html: data.fr["header"][1] }}
-                  onClick={() => setLocation("feed")}
-                >
+                  <button
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.fr["header"][1] }}
+                    onClick={() => setLocation("feed")}
+                  ></button>
 
-                </button>
+                  <button
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.fr["header"][2] }}
+                    onClick={() => setLocation("contact")}
+                  ></button>
+                  <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
+                </div>
+              ) : (
+                <div id="header-btns-div" className="header-disp">
+                  <button
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.en["header"][0] }}
+                    onClick={() => setLocation("aboute")}
+                  ></button>
 
-                <button
-                  className="header-btns-btn"
-                  dangerouslySetInnerHTML={{ __html: data.fr["header"][2] }}
-                  onClick={() => setLocation("contact")}
-                ></button>
-              </div>
+                  <button
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.en["header"][1] }}
+                    onClick={() => setLocation("feed")}
+                  ></button>
+
+                  <button
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.en["header"][2] }}
+                    onClick={() => setLocation("contact")}
+                  ></button>
+                  <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
+                </div>
+              )}
               <div
                 id="selected-btn-dot"
                 className={
                   location === "about-me"
                     ? "about-me"
                     : location === "feed"
-                      ? "feed"
-                      : "contact"
+                    ? "feed"
+                    : "contact"
                 }
               />
             </div>

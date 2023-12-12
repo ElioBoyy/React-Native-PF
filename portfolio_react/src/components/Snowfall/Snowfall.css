@@ -1,0 +1,13 @@
+.snowflake {
+  position: absolute;
+  background: radial-gradient(circle, #53195d 50%, transparent 50%);
+  border-radius: 50%;
+  top: -10px; /* Start above the viewport */
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(calc(100vh + 10px));
+  }
+}
