@@ -17,7 +17,9 @@ const Snowfall = () => {
       const animationDuration = Math.random() * 3 + 2; // Duration between 2 and 5 seconds
       snowflake.style.animationDuration = `${animationDuration}s`;
 
-      snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+      snowflake.style.left = `${
+        (0.05 + Math.random() * 0.9) * window.innerWidth
+      }px`;
       document.body.appendChild(snowflake);
 
       // Remove snowflake after animation

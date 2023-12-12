@@ -8,6 +8,6 @@
 
 @keyframes fall {
   to {
-    transform: translateY(calc(100vh + 10px));
+    transform: translateY(calc(100vh));
   }
 }

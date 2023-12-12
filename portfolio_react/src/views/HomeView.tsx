@@ -42,7 +42,7 @@ function HomeView({ langue }: { langue: string }) {
           height: "20vh",
           position: "absolute",
           background: "linear-gradient(to bottom, transparent 0%, #fdf7fd 70%)",
-          top: "101vh",
+          top: "100vh",
           width: "100vw",
           transform: "translate(0,-100%)",
           zIndex: "5555",
