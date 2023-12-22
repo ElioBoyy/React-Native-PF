@@ -1,12 +1,7 @@
 import "./FeedView.css";
 
 function FeedView({ langue }: { langue: string }) {
-  
-  return (
-    <div>
-      <h1>helloworld</h1>
-    </div>
-  );
+  return <div>{langue === "fr" ? <p>FR</p> : <p>EN</p>}</div>;
 }
 
 export default FeedView;

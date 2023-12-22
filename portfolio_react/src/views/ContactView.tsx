@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./ContactView.css";
 import LinkedinLogo from "../assets/iconmonstr-linkedin-3.svg";
 import GithubLogo from "../assets/iconmonstr-github-3.svg";
@@ -13,6 +13,7 @@ function ContactView({ langue }: { langue: string }) {
 
   return (
     <div id="contact-view">
+      {langue === "fr" ? <p>FR</p> : <p>EN</p>}
       <section id="social-network">
         <div id="social-network-txtzone">
           <h1
