@@ -4,6 +4,7 @@ import Job from "../components/Job/Job";
 import { useState } from "react";
 import Formation from "../components/Formation/Formation";
 import Snowfall from "../components/Snowfall/Snowfall";
+import MathisSportielloPhoto from "../assets/mathis-sportiello-pic.png";
 
 function HomeView({ langue }: { langue: string }) {
   const [expProLeft, setExpProLeft] = useState("50%");
@@ -66,6 +67,31 @@ function HomeView({ langue }: { langue: string }) {
               ></p>
             </>
           )}
+        </div>
+
+        <div id="CV-div">
+          <img src={MathisSportielloPhoto} alt="mathis PIC" id="" />
+          <div id="CV-txtdiv">
+            {langue === "fr" ? (
+              <>
+                <h1 dangerouslySetInnerHTML={{ __html: data.fr["CV"][0] }}></h1>
+                <a
+                  target="_blank "
+                  href={data.fr["CV"][2]}
+                  dangerouslySetInnerHTML={{ __html: data.fr["CV"][1] }}
+                ></a>
+              </>
+            ) : (
+              <>
+                <h1 dangerouslySetInnerHTML={{ __html: data.en["CV"][0] }}></h1>
+                <a
+                  target="_blank "
+                  href={data.en["CV"][2]}
+                  dangerouslySetInnerHTML={{ __html: data.en["CV"][1] }}
+                ></a>
+              </>
+            )}
+          </div>
         </div>
 
         <div id="exp-pro">
