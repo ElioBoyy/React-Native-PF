@@ -5,7 +5,7 @@ import GithubLogo from "../assets/iconmonstr-github-3.svg";
 import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
 
 function ContactView({ langue }: { langue: string }) {
-  const [clickedSocial, setClickedSocial] = useState("");
+  const [clickedSocial, setClickedSocial] = useState("linkedin");
 
   const handleSocialClick = (state: string) => {
     setClickedSocial(state);
@@ -45,7 +45,7 @@ function ContactView({ langue }: { langue: string }) {
             width: "0px",
             border: "1px solid black",
             marginLeft: "80px",
-            marginRight: "80px"
+            marginRight: "80px",
           }}
         />
         <div className="social-network-logos">
@@ -54,7 +54,9 @@ function ContactView({ langue }: { langue: string }) {
             alt=""
             style={{
               transform:
-                clickedSocial === "linkedin" ? "translateY(0px)" : "translateY(-300px)"
+                clickedSocial === "linkedin"
+                  ? "translateY(0px)"
+                  : "translateY(-300px)",
             }}
           />
           <img
@@ -62,7 +64,11 @@ function ContactView({ langue }: { langue: string }) {
             alt=""
             style={{
               transform:
-                clickedSocial === "github" ? "translateY(-300px)" : clickedSocial === "instagram" ? "translateY(-600px)" : "translateY(0px)"
+                clickedSocial === "github"
+                  ? "translateY(-300px)"
+                  : clickedSocial === "instagram"
+                  ? "translateY(-600px)"
+                  : "translateY(0px)",
             }}
           />
           <img
@@ -70,7 +76,9 @@ function ContactView({ langue }: { langue: string }) {
             alt=""
             style={{
               transform:
-                clickedSocial === "instagram" ? "translateY(-600px)" : "translateY(-300px)"
+                clickedSocial === "instagram"
+                  ? "translateY(-600px)"
+                  : "translateY(-300px)",
             }}
           />
         </div>
