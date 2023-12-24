@@ -51,7 +51,7 @@ function Formation({ forma, keyp, length }: FormationProps) {
           </div>
         </div>
 
-        {windowWidth > 1600 ? (trans = trans) : (trans = "")}
+        {windowWidth > 1600 ? <></> : (trans = "")}
         <div style={{ transform: trans }}>
           <p
             className="dates"

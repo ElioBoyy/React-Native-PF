@@ -70,23 +70,23 @@ function Header({ toggleLangue, langue }: HeaderProps) {
                 </div>
               ) : (
                 <div id="header-btns-div" className="header-disp">
-                  <button
+                  <a
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.en["header"][0] }}
                     onClick={() => setLocation("about")}
-                  ></button>
+                  ></a>
 
-                  <button
+                  <a
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.en["header"][1] }}
                     onClick={() => setLocation("feed")}
-                  ></button>
+                  ></a>
 
-                  <button
+                  <a
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.en["header"][2] }}
                     onClick={() => setLocation("contact")}
-                  ></button>
+                  ></a>
                   <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
                 </div>
               )}
