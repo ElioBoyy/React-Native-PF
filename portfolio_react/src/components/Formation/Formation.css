@@ -44,6 +44,9 @@
   .forma-content {
     width: 100%;
   }
+  .datesDiv {
+    left: 50%;
+  }
 }
 
 @media (max-width: 800px) or (max-height: 600px) {
