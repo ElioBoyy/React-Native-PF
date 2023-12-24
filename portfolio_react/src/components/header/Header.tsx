@@ -11,7 +11,7 @@ interface HeaderProps {
 function Header({ toggleLangue, langue }: HeaderProps) {
   const [location, setLocation] = useState("about-me");
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-  const [clickedState, setClickedState] = useState("notClicked");
+  const [clickedState, setClickedState] = useState(false);
 
   const updateWindowWidth = () => {
     setWindowWidth(window.innerWidth);
@@ -28,7 +28,7 @@ function Header({ toggleLangue, langue }: HeaderProps) {
   }, []);
 
   const handleClickHam = () => {
-    setClickedState(clickedState === "notClicked" ? "clicked" : "notClicked");
+    setClickedState(clickedState ? false : true);
   };
 
   return (
@@ -106,7 +106,7 @@ function Header({ toggleLangue, langue }: HeaderProps) {
       ) : (
         <>
           <div className="hamMenu" onClick={handleClickHam}>
-            {clickedState === "notClicked" ? (
+            {clickedState === false ? (
               <>
                 <div className="hamSlice" />
                 <div className="hamSlice" />
@@ -120,11 +120,53 @@ function Header({ toggleLangue, langue }: HeaderProps) {
             )}
           </div>
 
-          {clickedState === "clicked" ? (
+          {clickedState === true ? (
             <div className="menu">
-              <p>A propos</p>
-              <p>Feed</p>
-              <p>Contact</p>
+              {langue === "fr" ? (
+                <>
+                  <a
+                    href="/"
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.fr["header"][0] }}
+                    onClick={() => setLocation("about")}
+                  ></a>
+                  <a
+                    href="/feed"
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.fr["header"][1] }}
+                    onClick={() => setLocation("feed")}
+                  ></a>
+                  <a
+                    href="/contact"
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.fr["header"][2] }}
+                    onClick={() => setLocation("contact")}
+                  ></a>
+                  <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
+                </>
+              ) : (
+                <>
+                  <a
+                    href="/"
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.en["header"][0] }}
+                    onClick={() => setLocation("about")}
+                  ></a>
+                  <a
+                    href="/feed"
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.en["header"][1] }}
+                    onClick={() => setLocation("feed")}
+                  ></a>
+                  <a
+                    href="/contact"
+                    className="header-btns-btn underline-on-hover"
+                    dangerouslySetInnerHTML={{ __html: data.en["header"][2] }}
+                    onClick={() => setLocation("contact")}
+                  ></a>
+                  <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
+                </>
+              )}
             </div>
           ) : (
             <></>

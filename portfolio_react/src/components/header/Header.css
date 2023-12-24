@@ -159,13 +159,19 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  background-color: blue;
-  width: 280px;
-  height: fit-content;
+  align-items: center;
+  background-color: #fdf7fd;
+  height: fit-content; /* Adjust based on your design */
   top: 0px;
   right: 0px;
+  z-index: 9999;
+  border-left: #53195d1a 2px solid;
+  border-bottom: #53195d1a 2px solid;
+  border-bottom-left-radius: 20px;
+  overflow-x: hidden;
   padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 100px;
   padding-right: 100px;
 }
 
