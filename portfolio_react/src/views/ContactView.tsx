@@ -63,11 +63,13 @@ function ContactView({ langue }: { langue: string }) {
         >
           <img src={LinkedinLogo} alt="LinkedinLogo" />
         </a>
+        <p>@ Mathis Sportiello</p>
       </article>
       <article className="socialLogos" id="GitHub">
         <a target="_blank" href="https://github.com/ElioBoyy">
           <img src={GithubLogo} alt="GitHubLogo" />
         </a>
+        <p>@ ElioBoyy</p>
       </article>
       <article className="socialLogos" id="Instagram">
         <a
@@ -76,25 +78,46 @@ function ContactView({ langue }: { langue: string }) {
         >
           <img src={InstaLogo} alt="InstagramLogo" />
         </a>
+        <p>@ mathissportiello</p>
       </article>
 
       <div id="contacts-endpage">
-        <div id="conventional-contacts">
-          <div>E-mail : mathis.sportiello@gmail.com</div>
-          <div>Téléphone : 06.44.16.98.01</div>
-          <div>Adresse : 21 rue des Ecureuils, Annecy (74940), France</div>
-        </div>
-        <div />
-        <div>
-          <img
-            src={isSvg1 ? Heart : HeartFilled}
-            alt=""
-            onClick={handleComponentClick}
-          />
-          <h1>Likes totaux : {data.likeCounter["like"]}</h1>
+        <h1>Me contacter</h1>
+        <div id="contacts-endpage-h1">
+          <div id="conventional-contacts">
+            {langue === "fr" ? (
+              <>
+                <div>E-mail : mathis.sportiello@gmail.com</div>
+                <div>Téléphone : 06.44.16.98.01</div>
+                <div>
+                  Adresse : 21 rue des Ecureuils, Annecy (74940), France
+                </div>
+              </>
+            ) : (
+              <>
+                <div>E-mail : mathis.sportiello@gmail.com</div>
+                <div>Mobile phone : +33 6.44.16.98.01</div>
+                <div>
+                  Address : 21 rue des Ecureuils, Annecy (74940), France
+                </div>
+              </>
+            )}
+          </div>
+          <div id="separator-endpage" />
+          <div id="like-section">
+            <img
+              src={isSvg1 ? Heart : HeartFilled}
+              alt=""
+              onClick={handleComponentClick}
+            />
+            {langue === "fr" ? (
+              <h1>Likes totaux : {data.likeCounter["like"]}</h1>
+            ) : (
+              <h1>Total likes : {data.likeCounter["like"]}</h1>
+            )}
+          </div>
         </div>
       </div>
-      {langue === "fr" ? <p>FR</p> : <p>EN</p>}
     </div>
   );
 }

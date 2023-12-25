@@ -286,6 +286,6 @@ export const data = {
     ],
   },
   likeCounter: {
-    like: 0,
+    like: 73,
   },
 };

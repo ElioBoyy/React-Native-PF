@@ -1,11 +1,19 @@
-body {
+* {
   scroll-behavior: smooth;
+}
+
+#contact-view {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: fit-content;
 }
 
 .socials {
   left: 0px;
   height: 100vh;
-  width: 30vw;
+  width: 30%;
 }
 
 .socials-txt {
@@ -17,6 +25,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  border-right: #53195d solid 2px;
 }
 
 .socials-txt a {
@@ -26,29 +41,34 @@ body {
   font-size: 24px;
 }
 
+.socialLogos p {
+  position: absolute;
+  top: 70%;
+}
+
 #Linkedin {
   position: relative;
   top: 0vh;
-  left: 30vw;
-  width: 70vw;
+  left: 30%;
+  width: 70%;
   height: 100vh;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 #GitHub {
   position: relative;
-  left: 30vw;
-  width: 70vw;
+  left: 30%;
+  width: 70%;
   height: 100vh;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 
 #Instagram {
   position: relative;
-  left: 30vw;
-  width: 70vw;
+  left: 30%;
+  width: 70%;
   height: 100vh;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 
 #contact-view article {
@@ -67,13 +87,56 @@ body {
   transition: 0.2s ease-out;
 }
 
+#contacts-endpage {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #53195d;
+  color: #fdf7fd;
+}
+
 #conventional-contacts {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+#conventional-contacts div {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-#contacts-endpage {
+#contacts-endpage-h1 {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+#separator-endpage {
+  height: 100%;
+  width: 2px;
+  background-color: #fdf7fd;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#like-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+#like-section img {
+  width: 100px;
+  cursor: pointer;
+}
+#like-section h1 {
+  padding: 0px;
+  margin: 0px;
 }
