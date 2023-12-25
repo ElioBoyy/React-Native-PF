@@ -1,45 +1,79 @@
-#contact-view {
-    width: 100%;
-    position: relative;
-    height: fit-content;
-    min-height: 100vh;
+body {
+  scroll-behavior: smooth;
 }
 
-#social-network {
-    position: absolute;
-    width: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.socials {
+  left: 0px;
+  height: 100vh;
+  width: 30vw;
 }
 
-#social-network-txtzone {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-evenly;
-    flex: 1;
-}
-#social-network-txtzone h1 {
-    cursor: pointer;
+.socials-txt {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: fit-content;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.social-network-logos{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 300px;
-    overflow: hidden;
+.socials-txt a {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  font-size: 24px;
 }
-.social-network-logos img{
-    width: 250px;
-    margin-bottom: 25px;
-    margin-top: 25px;
-    transform: translateY(-300px);
 
-    transition: .5s ease-in-out;
+#Linkedin {
+  position: relative;
+  top: 0vh;
+  left: 30vw;
+  width: 70vw;
+  height: 100vh;
+  background-color: aqua;
+}
+
+#GitHub {
+  position: relative;
+  left: 30vw;
+  width: 70vw;
+  height: 100vh;
+  background-color: bisque;
+}
+
+#Instagram {
+  position: relative;
+  left: 30vw;
+  width: 70vw;
+  height: 100vh;
+  background-color: cadetblue;
+}
+
+#contact-view article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-view article a img {
+  width: 20vw;
+  transition: 0.2s ease-out;
+}
+
+#contact-view article a img:hover {
+  scale: 1.05;
+  transition: 0.2s ease-out;
+}
+
+#conventional-contacts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts-endpage {
+  display: flex;
+  flex-direction: row;
 }

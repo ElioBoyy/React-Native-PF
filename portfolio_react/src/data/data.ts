@@ -285,4 +285,7 @@ export const data = {
       "https://drive.google.com/file/d/1gVYRY4EYzuaYQcZ2_LYoVlUVNMhpZKE5/view?usp=sharing",
     ],
   },
+  likeCounter: {
+    like: 0,
+  },
 };
