@@ -6,7 +6,6 @@ import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
 import Heart from "../../public/heart.svg";
 import HeartFilled from "../../public/heartFilled.svg";
 import { data } from "../data/data";
-import * as fs from "fs";
 
 function ContactView({ langue }: { langue: string }) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -40,24 +39,6 @@ function ContactView({ langue }: { langue: string }) {
     position: scrollPosition >= vhToPixels(2) ? "absolute" : "fixed",
     top: scrollPosition >= vhToPixels(2) ? vhToPixels(2) : "0px",
   };
-
-  // Fonction pour lire la valeur actuelle du likeCounter depuis le fichier JSON
-  function lireLikeCounter(): number {
-    try {
-      // Lire le contenu du fichier JSON
-      const contenuFichier = fs.readFileSync(
-        "../data/likeCounter.json",
-        "utf-8"
-      );
-
-      // Parsez le JSON et récupérez la valeur de likeCounter
-      const json = JSON.parse(contenuFichier);
-      return json.likeCounter;
-    } catch (erreur) {
-      console.error("Erreur lors de la lecture du fichier JSON :", erreur);
-      return 0; // Retourne une valeur par défaut en cas d'erreur
-    }
-  }
 
   return (
     <div id="contact-view">
