@@ -10,5 +10,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   </BrowserRouter>
 );
 
-
 // https://iconmonstr.com/ -> SVG

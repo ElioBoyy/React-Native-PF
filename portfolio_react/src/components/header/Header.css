@@ -12,6 +12,8 @@
 
   height: 80px;
   z-index: 999999;
+
+  transition: 0.2s ease-in-out;
 }
 
 #header-bg {
@@ -26,6 +28,8 @@
   background-color: #fdf7fd;
   opacity: 0.98;
   box-shadow: #00000033 0px 00px 10px;
+
+  transition: 0.2s ease-in-out;
 }
 
 #header-logo-ms {
@@ -133,6 +137,8 @@
   background-color: #53195d;
   border: solid 2px #fdf7fd;
   border-radius: 20px;
+
+  transition: 0.2s ease-out;
 }
 
 .hamSliceCross1 {
@@ -163,7 +169,6 @@
   background-color: #fdf7fd;
   height: fit-content; /* Adjust based on your design */
   top: 0px;
-  right: 0px;
   z-index: 9999;
   border-left: #53195d1a 2px solid;
   border-bottom: #53195d1a 2px solid;
@@ -171,8 +176,9 @@
   overflow-x: hidden;
   padding-top: 70px;
   padding-bottom: 70px;
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 400px;
+
+  transition: 0.3s ease-in-out;
 }
 
 .underline-on-hover {
