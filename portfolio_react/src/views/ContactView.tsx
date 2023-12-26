@@ -6,6 +6,7 @@ import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
 import Heart from "../../public/heart.svg";
 import HeartFilled from "../../public/heartFilled.svg";
 import { data } from "../data/data";
+import * as fs from "fs";
 
 function ContactView({ langue }: { langue: string }) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -29,9 +30,9 @@ function ContactView({ langue }: { langue: string }) {
     setIsSvg1((prevIsSvg1) => !prevIsSvg1);
 
     if (isSvg1) {
-      data.likeCounter["like"] += 1;
+      data.likeCounter += 1;
     } else {
-      data.likeCounter["like"] -= 1;
+      data.likeCounter -= 1;
     }
   };
 
@@ -39,6 +40,24 @@ function ContactView({ langue }: { langue: string }) {
     position: scrollPosition >= vhToPixels(2) ? "absolute" : "fixed",
     top: scrollPosition >= vhToPixels(2) ? vhToPixels(2) : "0px",
   };
+
+  // Fonction pour lire la valeur actuelle du likeCounter depuis le fichier JSON
+  function lireLikeCounter(): number {
+    try {
+      // Lire le contenu du fichier JSON
+      const contenuFichier = fs.readFileSync(
+        "../data/likeCounter.json",
+        "utf-8"
+      );
+
+      // Parsez le JSON et récupérez la valeur de likeCounter
+      const json = JSON.parse(contenuFichier);
+      return json.likeCounter;
+    } catch (erreur) {
+      console.error("Erreur lors de la lecture du fichier JSON :", erreur);
+      return 0; // Retourne une valeur par défaut en cas d'erreur
+    }
+  }
 
   return (
     <div id="contact-view">
@@ -82,23 +101,37 @@ function ContactView({ langue }: { langue: string }) {
       </article>
 
       <div id="contacts-endpage">
-        <h1>Me contacter</h1>
+        <h1 className="text-bolder">Me contacter</h1>
         <div id="contacts-endpage-h1">
           <div id="conventional-contacts">
             {langue === "fr" ? (
               <>
-                <div>E-mail : mathis.sportiello@gmail.com</div>
-                <div>Téléphone : 06.44.16.98.01</div>
                 <div>
-                  Adresse : 21 rue des Ecureuils, Annecy (74940), France
+                  <span className="text-bolder">E-mail</span> :
+                  mathis.sportiello@gmail.com
+                </div>
+                <div>
+                  <span className="text-bolder">Téléphone</span> :
+                  06.44.16.98.01
+                </div>
+                <div>
+                  <span className="text-bolder">Adresse</span> : 21 rue des
+                  Ecureuils, Annecy (74940), France
                 </div>
               </>
             ) : (
               <>
-                <div>E-mail : mathis.sportiello@gmail.com</div>
-                <div>Mobile phone : +33 6.44.16.98.01</div>
                 <div>
-                  Address : 21 rue des Ecureuils, Annecy (74940), France
+                  <span className="text-bolder">E-mail</span> :
+                  mathis.sportiello@gmail.com
+                </div>
+                <div>
+                  <span className="text-bolder">Mobile phone</span> : +33
+                  6.44.16.98.01
+                </div>
+                <div>
+                  <span className="text-bolder">Address</span> : 21 rue des
+                  Ecureuils, Annecy (74940), France
                 </div>
               </>
             )}
@@ -111,9 +144,9 @@ function ContactView({ langue }: { langue: string }) {
               onClick={handleComponentClick}
             />
             {langue === "fr" ? (
-              <h1>Likes totaux : {data.likeCounter["like"]}</h1>
+              <h1>Likes totaux : {data.likeCounter}</h1>
             ) : (
-              <h1>Total likes : {data.likeCounter["like"]}</h1>
+              <h1>Total likes : {data.likeCounter}</h1>
             )}
           </div>
         </div>
