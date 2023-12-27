@@ -2,6 +2,7 @@ import { data } from "../../data/data";
 import { ToggleLanguage } from "../ToggleLanguage/ToggleLanguage";
 import "./Header.css";
 import { useEffect, useState } from "react";
+import MSPortfolio from "../public/ms.svg";
 
 interface HeaderProps {
   toggleLangue: any;
@@ -58,7 +59,7 @@ function Header({ toggleLangue, langue }: HeaderProps) {
             }}
           >
             <img
-              src="../public/ms.svg"
+              src={MSPortfolio}
               alt="MS Logo"
               id="header-logo-ms"
               className="header-disp"
