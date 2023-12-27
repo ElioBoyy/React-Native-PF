@@ -2,7 +2,7 @@ import { data } from "../../data/data";
 import { ToggleLanguage } from "../ToggleLanguage/ToggleLanguage";
 import "./Header.css";
 import { useEffect, useState } from "react";
-import MSPortfolio from "../public/ms.svg";
+import MSPortfolio from "../../../public/ms.svg";
 
 interface HeaderProps {
   toggleLangue: any;
