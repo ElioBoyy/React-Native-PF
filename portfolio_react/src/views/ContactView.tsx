@@ -5,7 +5,7 @@ import GithubLogo from "../assets/iconmonstr-github-3.svg";
 import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
 import Heart from "../../public/heart.svg";
 import HeartFilled from "../../public/heartFilled.svg";
-import { data } from "../data/data";
+
 import { readJsonFile } from "../data/likeCounter";
 import { writeJsonFile } from "../data/likeCounter";
 
