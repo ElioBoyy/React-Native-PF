@@ -1,6 +1,7 @@
 import USMB from "../../public/USMB.svg";
 import Allegro from "../../public/Allegro_MicroSystems_logo.svg";
 import C_Gastro from "../../public/logo-c-gastronomie.svg";
+import MSPortfolio from "../../public/ms.svg";
 import { technosTableau } from "./techno";
 
 export const data = {
@@ -15,10 +16,10 @@ export const data = {
     "job-articles": [
       [
         "Portfolio",
-        "",
+        "MS_Portfolio",
         "mathis-sportiello.vercel.app",
         "Développement de ce portfolio",
-        "Portfolio réalisé en React TypeScript.<br/>J'ai appris seul le framework React en m'aidant des compétences précédemment obtenues en codant un site d'e-commerce en VueJS et de supports vidéos.<br/>De même pour le TypeScript, j'ai appris à maitriser ce langage de programation à l'aide de sa documentation officielle et de vidéos.",
+        "<span class='text-bolder'>Portfolio</span> réalisé en <span class='text-bolder'>React TypeScript</span>.<br/><br/>J'ai appris seul le framework <span class='text-bolder'>React</span> en m'aidant des compétences précédemment obtenues en codant un site d'e-commerce en <span class='text-bolder'>VueJS</span> et des <span class='text-bolder'>supports vidéos</span>.<br/><br/>De même pour le <span class='text-bolder'>TypeScript</span>, j'ai appris à maîtriser ce langage de programmation à l'aide de sa <span class='text-bolder'>documentation officielle</span> et de <span class='text-bolder'>supports vidéos</span>.",
         [
           technosTableau.react,
           technosTableau.typescript,
@@ -32,7 +33,7 @@ export const data = {
           "Design web",
           "Clean Code",
         ],
-        ["Auto formation", "Auto discipline", "Lecture de documentation"],
+        ["Auto-formation", "Auto-discipline", "Lecture de documentation"],
         ["https://github.com/ElioBoyy/React-PF-MS"],
       ],
       [
@@ -174,6 +175,30 @@ export const data = {
     presentationHL: "<p id='presentation-futur-numerique'>Digital Future</p>",
     "text-parallelepiped": ["My professional experience", "My school career"],
     "job-articles": [
+      [
+        [
+          "Portfolio",
+          MSPortfolio,
+          "mathis-sportiello.vercel.app",
+          "Development of this portfolio",
+          "<span class='text-bolder'>Portfolio</span> created in <span class='text-bolder'>React TypeScript</span>.<br/><br/>I independently learned the <span class='text-bolder'>React</span> framework, leveraging skills acquired while coding an e-commerce site in <span class='text-bolder'>VueJS</span> and from <span class='text-bolder'>video tutorials</span>.<br/><br/>Similarly, for <span class='text-bolder'>TypeScript</span>, I mastered this programming language using its <span class='text-bolder'>official documentation</span> and <span class='text-bolder'>video tutorials</span>.",
+          [
+            technosTableau.react,
+            technosTableau.typescript,
+            technosTableau.html,
+            technosTableau.css,
+            technosTableau.vscode,
+            technosTableau.github,
+            technosTableau.git,
+            "Continuous Integration or Continuous Deployment (CI/CD)",
+            "Online Deployment",
+            "Web Design",
+            "Clean Code",
+          ],
+          ["Self-learning", "Self-discipline", "Reading documentation"],
+          ["https://github.com/ElioBoyy/React-PF-MS"],
+        ],
+      ],
       [
         "Allegro Microsystems",
         Allegro,
