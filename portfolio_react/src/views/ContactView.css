@@ -26,11 +26,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 60px;
-  padding-right: 60px;
-
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
   border-right: #53195d solid 2px;
 }
 

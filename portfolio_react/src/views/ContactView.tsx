@@ -4,11 +4,9 @@ import LinkedinLogo from "../assets/iconmonstr-linkedin-3.svg";
 import GithubLogo from "../assets/iconmonstr-github-3.svg";
 import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
 import Heart from "../../public/heart.svg";
-import HeartFilled from "../../public/heartFilled.svg";
 
 function ContactView({ langue }: { langue: string }) {
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [isSvg1, setIsSvg1] = useState(true);
 
   const vhToPixels = (vh: number) => window.innerHeight * vh;
 
@@ -109,7 +107,7 @@ function ContactView({ langue }: { langue: string }) {
           <div id="separator-endpage" />
           <div id="like-section">
             <img
-              src={isSvg1 ? Heart : HeartFilled}
+              src={Heart}
               alt=""
               //onClick={handleComponentClick}
             />

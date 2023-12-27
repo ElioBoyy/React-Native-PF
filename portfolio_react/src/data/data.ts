@@ -14,6 +14,28 @@ export const data = {
     ],
     "job-articles": [
       [
+        "Portfolio",
+        "",
+        "mathis-sportiello.vercel.app",
+        "Développement de ce portfolio",
+        "Portfolio réalisé en React TypeScript.<br/>J'ai appris seul le framework React en m'aidant des compétences précédemment obtenues en codant un site d'e-commerce en VueJS et de supports vidéos.<br/>De même pour le TypeScript, j'ai appris à maitriser ce langage de programation à l'aide de sa documentation officielle et de vidéos.",
+        [
+          technosTableau.react,
+          technosTableau.typescript,
+          technosTableau.html,
+          technosTableau.css,
+          technosTableau.vscode,
+          technosTableau.github,
+          technosTableau.git,
+          "Intégration Continue ou Déploiement Continu (CI/CD)",
+          "Déploiement en ligne",
+          "Design web",
+          "Clean Code",
+        ],
+        ["Auto formation", "Auto discipline", "Lecture de documentation"],
+        ["https://github.com/ElioBoyy/React-PF-MS"],
+      ],
+      [
         "Allegro Microsystems",
         Allegro,
         "https://www.allegromicro.com/en/",
