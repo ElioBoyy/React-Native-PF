@@ -19,7 +19,7 @@ export const data = {
         MSPortfolio,
         "mathis-sportiello.vercel.app",
         "Développement de ce portfolio",
-        "<span class='text-bolder'>Portfolio</span> réalisé en <span class='text-bolder'>React TypeScript</span>.<br/><br/>J'ai appris seul le framework <span class='text-bolder'>React</span> en m'aidant des compétences précédemment obtenues en codant un site d'e-commerce en <span class='text-bolder'>VueJS</span> et de <span class='text-bolder'>supports vidéos</span>.<br/><br/>De même pour le <span class='text-bolder'>TypeScript</span>, j'ai appris à maîtriser ce langage de programmation à l'aide de sa <span class='text-bolder'>documentation officielle</span> et de <span class='text-bolder'>supports vidéos</span>.",
+        "<span class='text-bolder'>Portfolio</span> réalisé en <span class='text-bolder'>React TypeScript</span>.<br/><br/>J'ai appris indépendament le framework <span class='text-bolder'>React</span> en m'aidant des compétences précédemment obtenues en codant un site d'e-commerce en <span class='text-bolder'>VueJS</span> et en utilisant des <span class='text-bolder'>supports vidéos</span>.<br/><br/>De même pour le <span class='text-bolder'>TypeScript</span>, j'ai appris à maîtriser ce langage de programmation à l'aide de sa <span class='text-bolder'>documentation officielle</span> et de <span class='text-bolder'>supports vidéos</span>.",
         [
           technosTableau.react,
           technosTableau.typescript,
