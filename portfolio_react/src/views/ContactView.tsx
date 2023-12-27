@@ -6,6 +6,8 @@ import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
 import Heart from "../../public/heart.svg";
 import HeartFilled from "../../public/heartFilled.svg";
 import { data } from "../data/data";
+import { readJsonFile } from "../data/likeCounter";
+import { writeJsonFile } from "../data/likeCounter";
 
 function ContactView({ langue }: { langue: string }) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -25,14 +27,19 @@ function ContactView({ langue }: { langue: string }) {
     };
   }, []);
 
+  var currentData = readJsonFile();
+
   const handleComponentClick = () => {
     setIsSvg1((prevIsSvg1) => !prevIsSvg1);
 
+    currentData = readJsonFile();
+
     if (isSvg1) {
-      data.likeCounter += 1;
+      currentData.likeCounter++;
     } else {
-      data.likeCounter -= 1;
+      currentData.likeCounter--;
     }
+    writeJsonFile(currentData);
   };
 
   const style: React.CSSProperties = {
@@ -125,9 +132,9 @@ function ContactView({ langue }: { langue: string }) {
               onClick={handleComponentClick}
             />
             {langue === "fr" ? (
-              <h1>Likes totaux : {data.likeCounter}</h1>
+              <h1>Likes totaux : {currentData.likeCounter}</h1>
             ) : (
-              <h1>Total likes : {data.likeCounter}</h1>
+              <h1>Total likes : {currentData.likeCounter}</h1>
             )}
           </div>
         </div>
