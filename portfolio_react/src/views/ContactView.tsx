@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import LinkedinLogo from "../assets/iconmonstr-linkedin-3.svg";
 import GithubLogo from "../assets/iconmonstr-github-3.svg";
 import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
-import Like from "../../public/like-svgrepo-com.svg";
 
 function ContactView({ langue }: { langue: string }) {
   const [scrollPosition, setScrollPosition] = useState(0);
