@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import LinkedinLogo from "../assets/iconmonstr-linkedin-3.svg";
 import GithubLogo from "../assets/iconmonstr-github-3.svg";
 import InstaLogo from "../assets/iconmonstr-instagram-11.svg";
-import Heart from "../../public/heart.svg";
+import Like from "../../public/like-svgrepo-com.svg";
 
 function ContactView({ langue }: { langue: string }) {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -69,8 +69,15 @@ function ContactView({ langue }: { langue: string }) {
       </article>
 
       <div id="contacts-endpage">
-        <h1 className="text-bolder">Me contacter</h1>
         <div id="contacts-endpage-h1">
+          <div id="like-section">
+            {langue === 'fr' ? (
+              <h1 className="text-bolder">Me contacter</h1>
+            ) : (
+              <h1 className="text-bolder">Contact me</h1>
+            )}
+          </div>
+          <div id="separator-endpage" />
           <div id="conventional-contacts">
             {langue === "fr" ? (
               <>
@@ -102,19 +109,6 @@ function ContactView({ langue }: { langue: string }) {
                   Ecureuils, Annecy (74940), France
                 </div>
               </>
-            )}
-          </div>
-          <div id="separator-endpage" />
-          <div id="like-section">
-            <img
-              src={Heart}
-              alt=""
-              //onClick={handleComponentClick}
-            />
-            {langue === "fr" ? (
-              <h1>Likes totaux : {35}</h1>
-            ) : (
-              <h1>Total likes : {35}</h1>
             )}
           </div>
         </div>
