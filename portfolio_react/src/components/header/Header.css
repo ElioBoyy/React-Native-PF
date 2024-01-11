@@ -103,18 +103,6 @@
     transform: scale(1);
   }
 }
-#selected-btn-dot.about-me {
-  right: 325px;
-  animation: dot-slide-about 0.4s ease-in-out forwards;
-}
-#selected-btn-dot.feed {
-  right: 180px;
-  animation: dot-slide-feed 0.4s ease-in-out forwards;
-}
-#selected-btn-dot.contact {
-  right: 75px;
-  animation: dot-slide-contact 0.4s ease-in-out forwards;
-}
 
 .hamMenu {
   width: 50px;

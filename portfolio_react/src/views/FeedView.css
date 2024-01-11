@@ -1,0 +1,30 @@
+#FeedViewCSS {
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 200px;
+}
+
+#FeedViewCSS article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#gym video {
+    border-radius: 100%;
+    width: 400px;
+}
+
+#plane video {
+    border-radius: 100%;
+    width: 400px;
+}
+
+.FeedViewTxt {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+}

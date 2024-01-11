@@ -120,7 +120,7 @@ export const data = {
         ],
       ],
     ],
-    header: ["A propos", "Fil d'actualité", "Contact"],
+    header: ["A propos", "Plus sur moi", "Contact"],
     formation: [
       [
         "Université Savoie Mont-Blanc, Annecy",
@@ -168,6 +168,23 @@ export const data = {
       "ICI",
       "https://drive.google.com/file/d/1FaQwowGFb9tvBQX02BVcir_EyJCGIFej/view?usp=sharing",
     ],
+    feed: [
+      [
+        "../../public/onairfitness-removebg-preview.png",
+        "Renforcement musculaire",
+        "Le <span class='text-bolder'>renforcement musculaire</span> est l'une de mes <span class='text-bolder'>passions essentielles</span>. Je suis engagé dans un <span class='text-bolder'>programme d'entraînement intense</span>, <span class='text-bolder'>conçu par un coach</span>, visant l'<span class='text-bolder'>hypertrophie musculaire</span>. Mon objectif est d'atteindre mon <span class='text-bolder'>maximum physique naturel</span>, <span class='text-bolder'>sans</span> utiliser de <span class='text-bolder'>stéroïdes anabolisants</span>, en valorisant la <span class='text-bolder'>discipline</span>, la <span class='text-bolder'>persévérance</span> et le <span class='text-bolder'>respect de mon corps</span>. Je m'investis <span class='text-bolder'>5 à 6 jours par semaine</span> dans cette quête de dépassement de soi, tout en veillant à une <span class='text-bolder'>diététique contrôlée</span> pour atteindre ces objectifs."
+      ],
+      [
+        "../../public/planeVideo.MP4",
+        "Pilotage d'avion",
+        "En plein cursus pour obtenir mon <span class='text-bolder'>brevet de pilote privé (PPL)</span> à l'aéroport de <span class='text-bolder'>Lyon Bron</span> (Les ailes lyonnaises), le pilotage d'avion demeure une <span class='text-bolder'>passion</span> que j'envisageais initialement comme métier avant de me tourner vers l'informatique. Toutefois, la pandémie de la Covid-19 m'a amené à reconsidérer cette orientation, optant plutôt pour faire du pilotage une <span class='text-bolder'>activité de loisir</span>, compte tenu de son instabilité professionnelle accrue dans le contexte actuel. Malgré ce changement de cap, je conserve ma passion tout en explorant d'autres opportunités professionnelles <span class='text-bolder'>mieux adaptées</span> à la <span class='text-bolder'>réalité actuelle</span>."
+      ],
+      [
+        "../",
+        "Pêche",
+        "Initié à la pêche par mon <span class='text-bolder'>père</span> puis guidé par l'expérience de mon <span class='text-bolder'>grand-père</span>, je perpétue aujourd'hui cette activité à Annecy. <span class='text-bolder'>À bord d'une barque</span> ou <span class='text-bolder'>au bord du lac</span>, je consacre des matinées à la pêche, privilégiant souvent la capture de <span class='text-bolder'>perches</span> en raison de leur abondance et facilité à être pêchées. <br/>En tant que <span class='text-bolder'>loisir</span>, je veille à <span class='text-bolder'>relâcher immédiatement tout poisson pris</span>, dans un souci de <span class='text-bolder'>respect de l'animal</span> et de <span class='text-bolder'>préservation de l'écosystème</span>."
+      ]
+    ]
   },
   en: {
     presentation:
@@ -281,7 +298,7 @@ export const data = {
         ],
       ],
     ],
-    header: ["About", "Feed", "Contact"],
+    header: ["About", "More on me", "Contact"],
     formation: [
       [
         "Université Savoie Mont-Blanc, Annecy",
@@ -329,6 +346,17 @@ export const data = {
       "HERE",
       "https://drive.google.com/file/d/1gVYRY4EYzuaYQcZ2_LYoVlUVNMhpZKE5/view?usp=sharing",
     ],
+    feed: [
+      [
+        "../../public/planeVideo.MP4",
+        "Gym",
+        "Gym"
+      ],
+      [
+        "../../public/planeVideo.MP4",
+        "Flying",
+        "Currently undergoing training to obtain my <span class='text-bolder'>Private Pilot License (PPL)</span> at Lyon Bron Airport (Les Ailes Lyonnaises), flying remains a <span class='text-bolder'>passion</span> I initially considered as a career before shifting towards the field of computer science. However, the Covid-19 pandemic prompted me to reconsider this direction, choosing to turn flying into a <span class='text-bolder'>leisure activity</span>, given its increased professional instability in the current context. Despite this change of course, I maintain my passion while exploring other professional opportunities that are <span class='text-bolder'>better suited</span> to the <span class='text-bolder'>current reality</span>."
+      ]
+    ]
   },
-  likeCounter: 0,
 };
