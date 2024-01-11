@@ -347,16 +347,21 @@ export const data = {
       "https://drive.google.com/file/d/1gVYRY4EYzuaYQcZ2_LYoVlUVNMhpZKE5/view?usp=sharing",
     ],
     feed: [
-      [
-        "../../public/planeVideo.MP4",
-        "Gym",
-        "Gym"
-      ],
-      [
-        "../../public/planeVideo.MP4",
-        "Flying",
-        "Currently undergoing training to obtain my <span class='text-bolder'>Private Pilot License (PPL)</span> at Lyon Bron Airport (Les Ailes Lyonnaises), flying remains a <span class='text-bolder'>passion</span> I initially considered as a career before shifting towards the field of computer science. However, the Covid-19 pandemic prompted me to reconsider this direction, choosing to turn flying into a <span class='text-bolder'>leisure activity</span>, given its increased professional instability in the current context. Despite this change of course, I maintain my passion while exploring other professional opportunities that are <span class='text-bolder'>better suited</span> to the <span class='text-bolder'>current reality</span>."
-      ]
-    ]
+  [
+    "../../public/onairfitness-removebg-preview.png",
+    "Muscle Strengthening",
+    "Muscle strengthening is one of my essential passions. I am committed to an intense training program designed by a coach, aiming for muscle hypertrophy. My goal is to reach my natural physical maximum without using anabolic steroids, emphasizing discipline, perseverance, and respecting my body. I invest 5 to 6 days a week in this quest for self-improvement while ensuring controlled nutrition to achieve these goals."
+  ],
+  [
+    "../../public/planeVideo.MP4",
+    "Pilotage of Aircraft",
+    "In the process of obtaining my Private Pilot License (PPL) at Lyon Bron Airport (Les Ailes Lyonnaises), flying remains a passion that I initially considered as a career before turning to computer science. However, the Covid-19 pandemic led me to reconsider this path, choosing to make flying a leisure activity due to increased professional instability in the current context. Despite this change of course, I maintain my passion while exploring other professional opportunities better suited to the current reality."
+  ],
+  [
+    "../",
+    "Fishing",
+    "Introduced to fishing by my father and guided by my grandfather's experience, I continue this activity in Annecy. Whether on a boat or by the lake, I dedicate mornings to fishing, often preferring to catch perch due to their abundance and ease of capture. As a leisure activity, I make sure to immediately release any caught fish, out of concern for animal respect and ecosystem preservation."
+  ]
+]
   },
 };
