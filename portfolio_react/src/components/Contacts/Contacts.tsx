@@ -13,32 +13,32 @@ function Contacts({ langue }: { langue: string }) {
         <div id="conventional-contacts">
           {langue === "fr" ? (
             <>
-              <div>
+              <p>
                 <span className="text-bolder">E-mail</span> :
                 mathis.sportiello@gmail.com
-              </div>
-              <div>
+              </p>
+              <p>
                 <span className="text-bolder">Téléphone</span> : 06.44.16.98.01
-              </div>
-              <div>
+              </p>
+              <p>
                 <span className="text-bolder">Adresse</span> : 21 rue des
                 Ecureuils, Annecy (74940), France
-              </div>
+              </p>
             </>
           ) : (
             <>
-              <div>
+              <p>
                 <span className="text-bolder">E-mail</span> :
                 mathis.sportiello@gmail.com
-              </div>
-              <div>
+              </p>
+              <p>
                 <span className="text-bolder">Mobile phone</span> : +33
                 6.44.16.98.01
-              </div>
-              <div>
+              </p>
+              <p>
                 <span className="text-bolder">Address</span> : 21 rue des
                 Ecureuils, Annecy (74940), France
-              </div>
+              </p>
             </>
           )}
         </div>

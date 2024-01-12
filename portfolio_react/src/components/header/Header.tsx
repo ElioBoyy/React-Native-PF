@@ -14,9 +14,10 @@ function Header({ toggleLangue, langue }: HeaderProps) {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
   const [clickedState, setClickedState] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [prevScrollPosition, setPrevScrollPosition] = useState(0); // Nouveau state pour stocker la valeur précédente du défilement
+  const [prevScrollPosition, setPrevScrollPosition] = useState(0);
 
   const updateWindowWidth = () => {
+    console.log(windowWidth);
     setWindowWidth(window.innerWidth);
   };
 
@@ -123,7 +124,11 @@ function Header({ toggleLangue, langue }: HeaderProps) {
         </>
       ) : (
         <>
-          <div className="hamMenu" onClick={handleClickHam}>
+          <div
+            className="hamMenu"
+            onClick={handleClickHam}
+            style={{ left: windowWidth - 60 + "px" }}
+          >
             <div
               className="hamSlice"
               style={{
