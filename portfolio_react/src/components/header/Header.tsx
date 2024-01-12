@@ -71,42 +71,39 @@ function Header({ toggleLangue, langue }: HeaderProps) {
                     href="/"
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.fr["header"][0] }}
-                    onClick={() => setLocation("about")}
                   ></a>
 
                   <a
                     href="/feed"
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.fr["header"][1] }}
-                    onClick={() => setLocation("feed")}
                   ></a>
 
                   <a
                     href="/contact"
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.fr["header"][2] }}
-                    onClick={() => setLocation("contact")}
                   ></a>
                   <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
                 </div>
               ) : (
                 <div id="header-btns-div" className="header-disp">
                   <a
+                    href="/"
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.en["header"][0] }}
-                    onClick={() => setLocation("about")}
                   ></a>
 
                   <a
+                    href="/feed"
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.en["header"][1] }}
-                    onClick={() => setLocation("feed")}
                   ></a>
 
                   <a
+                    href="/contact"
                     className="header-btns-btn underline-on-hover"
                     dangerouslySetInnerHTML={{ __html: data.en["header"][2] }}
-                    onClick={() => setLocation("contact")}
                   ></a>
                   <ToggleLanguage toggleLangue={toggleLangue} langue={langue} />
                 </div>

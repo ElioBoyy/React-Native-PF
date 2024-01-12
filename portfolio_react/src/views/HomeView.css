@@ -22,6 +22,48 @@ body {
   align-items: center;
 }
 
+#geek-symptoms {
+  position: absolute;
+  width: 100%;
+  height: 120vh;
+  top: 0px;
+}
+
+#keyboard {
+  position: relative;
+  width: 200px;
+  top: 70vh;
+  left: 20%;
+  transition: 0.4s;
+}
+
+#mouse {
+  position: relative;
+  width: 200px;
+  top: 20vh;
+  left: 65%;
+  transition: 0.4s;
+}
+
+@media (max-width: 1600px) {
+  #keyboard {
+    width: 8vw;
+  }
+  #mouse {
+    width: 8vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #keyboard {
+    width: 18vw;
+  }
+  #mouse {
+    width: 18vw;
+    translate: -50px;
+  }
+}
+
 .prenom-nom {
   font-size: 5vw;
   display: flex;

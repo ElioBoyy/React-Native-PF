@@ -1,16 +1,19 @@
 import "./HomeView.css";
 import { data } from "../data/data";
 import Job from "../components/Job/Job";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Formation from "../components/Formation/Formation";
 import Contacts from "../components/Contacts/Contacts";
 import Snowfall from "../components/Snowfall/Snowfall";
 import MathisSportielloPhoto from "../assets/mathis-sportiello-pic.png";
+import KeyBoard from "../../public/keyboard-svgrepo-com.svg";
+import Mouse from "../../public/mouse-alt-svgrepo-com.svg";
 
 function HomeView({ langue }: { langue: string }) {
   const [expProLeft, setExpProLeft] = useState("50%");
   const [formaLeft, setFormaLeft] = useState("150%");
   const [controlFormaOrExpProText, setControlFormaOrExpProText] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleBtnClick = () => {
     // Mettez à jour les valeurs left en fonction de votre logique de transition
@@ -18,6 +21,19 @@ function HomeView({ langue }: { langue: string }) {
     setFormaLeft(formaLeft === "150%" ? "50%" : "150%");
     setControlFormaOrExpProText(controlFormaOrExpProText === 0 ? 1 : 0);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Mettez à jour la valeur précédente du défilement ici
+      setScrollPosition(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
 
   const currentDate = new Date();
   const startDate = new Date(currentDate.getFullYear(), 11, 1);
@@ -32,6 +48,24 @@ function HomeView({ langue }: { langue: string }) {
       )}
 
       <section id="homeview-ms">
+        <div id="geek-symptoms">
+          <img
+            id="keyboard"
+            src={KeyBoard}
+            alt=""
+            style={{
+              transform: "rotate(30deg) translate(" + -scrollPosition + "px)",
+            }}
+          />
+          <img
+            id="mouse"
+            src={Mouse}
+            alt=""
+            style={{
+              transform: "rotate(210deg) translate(" + -scrollPosition + "px)",
+            }}
+          />
+        </div>
         <div id="mid">
           <h1 className="prenom-nom">Mathis</h1>
           <div id="separator_name" />

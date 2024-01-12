@@ -16,6 +16,7 @@ function FeedView({ langue }: { langue: string }) {
               ></img>
               <div className="FeedViewTxt">
                 <h1
+                  className="libelle-job"
                   dangerouslySetInnerHTML={{ __html: data.fr["feed"][0][1] }}
                 ></h1>
                 <p
@@ -27,6 +28,7 @@ function FeedView({ langue }: { langue: string }) {
               <img src={planeImg} alt="" />
               <div className="FeedViewTxt">
                 <h1
+                  className="libelle-job"
                   dangerouslySetInnerHTML={{ __html: data.fr["feed"][1][1] }}
                 ></h1>
                 <p
@@ -38,6 +40,7 @@ function FeedView({ langue }: { langue: string }) {
               <img src="" alt="" />
               <div className="FeedViewTxt">
                 <h1
+                  className="libelle-job"
                   dangerouslySetInnerHTML={{ __html: data.fr["feed"][2][1] }}
                 ></h1>
                 <p
@@ -55,6 +58,7 @@ function FeedView({ langue }: { langue: string }) {
               ></img>
               <div className="FeedViewTxt">
                 <h1
+                  className="libelle-job"
                   dangerouslySetInnerHTML={{ __html: data.en["feed"][0][1] }}
                 ></h1>
                 <p
@@ -63,9 +67,10 @@ function FeedView({ langue }: { langue: string }) {
               </div>
             </article>
             <article id="plane">
-              <video src="planeImg" autoPlay muted loop></video>
+              <img src={planeImg} alt="" />
               <div className="FeedViewTxt">
                 <h1
+                  className="libelle-job"
                   dangerouslySetInnerHTML={{ __html: data.en["feed"][1][1] }}
                 ></h1>
                 <p
@@ -77,6 +82,7 @@ function FeedView({ langue }: { langue: string }) {
               <img src="" alt="" />
               <div className="FeedViewTxt">
                 <h1
+                  className="libelle-job"
                   dangerouslySetInnerHTML={{ __html: data.en["feed"][2][1] }}
                 ></h1>
                 <p
