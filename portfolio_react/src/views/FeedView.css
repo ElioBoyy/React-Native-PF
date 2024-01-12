@@ -1,30 +1,59 @@
 #FeedViewCSS {
-    position: relative;
-    width: 60%;
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: 200px;
+  position: relative;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 200px;
 }
 
 #FeedViewCSS article {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+#gym {
+  flex-direction: row-reverse;
 }
 
 #gym video {
-    border-radius: 100%;
-    width: 400px;
+  border-radius: 100%;
+  width: 400px;
 }
 
-#plane video {
-    border-radius: 100%;
-    width: 400px;
+#plane img {
+  height: 200px;
+  width: auto;
 }
 
 .FeedViewTxt {
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: justify;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: justify;
+}
+
+@media (max-width: 1300px) {
+  #gym {
+    flex-direction: column;
+  }
+  #plane {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  #FeedViewCSS {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #gym img {
+    width: 70vw;
+    transform: translate(0, -50px);
+  }
+  #plane {
+    flex-direction: column;
+  }
 }

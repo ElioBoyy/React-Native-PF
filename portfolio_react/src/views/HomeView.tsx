@@ -3,6 +3,7 @@ import { data } from "../data/data";
 import Job from "../components/Job/Job";
 import { useState } from "react";
 import Formation from "../components/Formation/Formation";
+import Contacts from "../components/Contacts/Contacts";
 import Snowfall from "../components/Snowfall/Snowfall";
 import MathisSportielloPhoto from "../assets/mathis-sportiello-pic.png";
 
@@ -97,7 +98,7 @@ function HomeView({ langue }: { langue: string }) {
         <div id="exp-pro">
           <div className="parallelepiped">
             <div id="chevrons-place">
-              <button onClick={handleBtnClick}>
+              <button onClick={handleBtnClick} id="btn-text-scoolorpro">
                 {langue === "fr" ? (
                   <>
                     {expProLeft === "50%" ? (
@@ -204,6 +205,7 @@ function HomeView({ langue }: { langue: string }) {
           </div>
         </div>
       </section>
+      <Contacts langue={langue}></Contacts>
     </div>
   );
 }

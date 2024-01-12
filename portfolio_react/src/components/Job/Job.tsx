@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Job.css";
 import { urlRegex } from "../../data/techno";
+import loupe from "../../../public/loupe-svgrepo-com.svg";
+import cross from "../../../public/cross-svgrepo-com.svg";
 
 interface JobProps {
   job: any;
@@ -10,10 +12,10 @@ interface JobProps {
 function Job({ job, langage }: JobProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const [buttonText, setButtonText] = useState("+");
+  const [buttonText, setButtonText] = useState(loupe);
   const handleClick = () => {
     invIsExpanded();
-    setButtonText((prevText) => (prevText === "+" ? "-" : "+"));
+    setButtonText((prevText) => (prevText === loupe ? cross : loupe));
   };
 
   const invIsExpanded = () => {
@@ -120,7 +122,7 @@ function Job({ job, langage }: JobProps) {
         )}
       </div>
       <button className="open_more_infos" onClick={handleClick}>
-        {buttonText}
+        <img src={buttonText} alt="" style={{ width: "50px" }} />
       </button>
     </article>
   );

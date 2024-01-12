@@ -109,7 +109,7 @@ export const data = {
         C_Gastro,
         "https://www.c-gastronomie.fr/",
         "Serveur Runner en CDD",
-        "Serveur au restaurant \"le Libellule\"à Annecy, exploité par C-Gastronomie, une maison partenaire de Paul Bocuse.<span class='text-bolder'><br/><br/>Présentation : </span>Le Libellule, bateau-restaurant d'Annecy, offre une expérience gastronomique exceptionnelle. Naviguant sur le lac, il marie cuisine raffinée et panorama enchanteur. Nos chefs créent des délices locaux, nos serveurs sont agréables et courtoix, transformant chaque repas en une aventure mémorable. Embarquez sur le Libellule pour une fusion parfaite de plaisirs culinaires et visuels, unique à Annecy.",
+        "Serveur au restaurant \"le Libellule\"à Annecy, exploité par C-Gastronomie, une maison partenaire de Paul Bocuse.<span class='text-bolder'><br/><br/>Présentation du restaurant : </span>Le Libellule, bateau-restaurant d'Annecy, offre une expérience gastronomique exceptionnelle. Naviguant sur le lac, il marie cuisine raffinée et panorama enchanteur. Nos chefs créent des délices locaux, nos serveurs sont agréables et courtoix, transformant chaque repas en une aventure mémorable. Embarquez sur le Libellule pour une fusion parfaite de plaisirs culinaires et visuels, unique à Annecy.",
         [],
         [
           "Savoir Vivre",
@@ -120,7 +120,7 @@ export const data = {
         ],
       ],
     ],
-    header: ["A propos", "Plus sur moi", "Contact"],
+    header: ["A propos", "Plus sur moi", "Réseaux sociaux"],
     formation: [
       [
         "Université Savoie Mont-Blanc, Annecy",
@@ -140,7 +140,7 @@ export const data = {
         "EPITA, Lyon",
         "Cycle préparatoire dans la même école d'ingénieur",
         [
-          "<span class='text-bolder'>Niveau</span> : Réorienté après la première année.",
+          "<span class='text-bolder'>Niveau</span> : Réorienté après la première année.<br/>Cette formation plus théorique que pratique n'était pas faite pour moi.",
         ],
         [2021, 2020],
         [
@@ -170,21 +170,21 @@ export const data = {
     ],
     feed: [
       [
-        "../../public/onairfitness-removebg-preview.png",
+        "https://i.ibb.co/3vfngfV/onairfitness-removebg-preview.png",
         "Renforcement musculaire",
-        "Le <span class='text-bolder'>renforcement musculaire</span> est l'une de mes <span class='text-bolder'>passions essentielles</span>. Je suis engagé dans un <span class='text-bolder'>programme d'entraînement intense</span>, <span class='text-bolder'>conçu par un coach</span>, visant l'<span class='text-bolder'>hypertrophie musculaire</span>. Mon objectif est d'atteindre mon <span class='text-bolder'>maximum physique naturel</span>, <span class='text-bolder'>sans</span> utiliser de <span class='text-bolder'>stéroïdes anabolisants</span>, en valorisant la <span class='text-bolder'>discipline</span>, la <span class='text-bolder'>persévérance</span> et le <span class='text-bolder'>respect de mon corps</span>. Je m'investis <span class='text-bolder'>5 à 6 jours par semaine</span> dans cette quête de dépassement de soi, tout en veillant à une <span class='text-bolder'>diététique contrôlée</span> pour atteindre ces objectifs."
+        "Le <span class='text-bolder'>renforcement musculaire</span> est l'une de mes <span class='text-bolder'>passions essentielles</span>. Je suis engagé dans un <span class='text-bolder'>programme d'entraînement intense</span>, <span class='text-bolder'>conçu par un coach</span>, visant l'<span class='text-bolder'>hypertrophie musculaire</span>. Mon objectif est d'atteindre mon <span class='text-bolder'>maximum physique naturel</span>, <span class='text-bolder'>sans</span> utiliser de <span class='text-bolder'>stéroïdes anabolisants</span>, en valorisant la <span class='text-bolder'>discipline</span>, la <span class='text-bolder'>persévérance</span> et le <span class='text-bolder'>respect de mon corps</span>. Je m'investis <span class='text-bolder'>5 à 6 jours par semaine</span> dans cette quête de dépassement de soi, tout en veillant à une <span class='text-bolder'>diététique contrôlée</span> pour atteindre ces objectifs.",
       ],
       [
-        "../../public/planeVideo.MP4",
+        "",
         "Pilotage d'avion",
-        "En plein cursus pour obtenir mon <span class='text-bolder'>brevet de pilote privé (PPL)</span> à l'aéroport de <span class='text-bolder'>Lyon Bron</span> (Les ailes lyonnaises), le pilotage d'avion demeure une <span class='text-bolder'>passion</span> que j'envisageais initialement comme métier avant de me tourner vers l'informatique. Toutefois, la pandémie de la Covid-19 m'a amené à reconsidérer cette orientation, optant plutôt pour faire du pilotage une <span class='text-bolder'>activité de loisir</span>, compte tenu de son instabilité professionnelle accrue dans le contexte actuel. Malgré ce changement de cap, je conserve ma passion tout en explorant d'autres opportunités professionnelles <span class='text-bolder'>mieux adaptées</span> à la <span class='text-bolder'>réalité actuelle</span>."
+        "En plein cursus pour obtenir mon <span class='text-bolder'>brevet de pilote privé (PPL)</span> à l'aéroport de <span class='text-bolder'>Lyon Bron</span> (Les ailes lyonnaises), le pilotage d'avion demeure une <span class='text-bolder'>passion</span> que j'envisageais initialement comme métier avant de me tourner vers l'informatique. Toutefois, la pandémie de la Covid-19 m'a amené à reconsidérer cette orientation, optant plutôt pour faire du pilotage une <span class='text-bolder'>activité de loisir</span>, compte tenu de son instabilité professionnelle accrue dans le contexte actuel. Malgré ce changement de cap, je conserve ma passion tout en explorant d'autres opportunités professionnelles <span class='text-bolder'>mieux adaptées</span> à la <span class='text-bolder'>réalité actuelle</span>.",
       ],
       [
         "../",
         "Pêche",
-        "Initié à la pêche par mon <span class='text-bolder'>père</span> puis guidé par l'expérience de mon <span class='text-bolder'>grand-père</span>, je perpétue aujourd'hui cette activité à Annecy. <span class='text-bolder'>À bord d'une barque</span> ou <span class='text-bolder'>au bord du lac</span>, je consacre des matinées à la pêche, privilégiant souvent la capture de <span class='text-bolder'>perches</span> en raison de leur abondance et facilité à être pêchées. <br/>En tant que <span class='text-bolder'>loisir</span>, je veille à <span class='text-bolder'>relâcher immédiatement tout poisson pris</span>, dans un souci de <span class='text-bolder'>respect de l'animal</span> et de <span class='text-bolder'>préservation de l'écosystème</span>."
-      ]
-    ]
+        "Initié à la pêche par mon <span class='text-bolder'>père</span> puis guidé par l'expérience de mon <span class='text-bolder'>grand-père</span>, je perpétue aujourd'hui cette activité à Annecy. <span class='text-bolder'>À bord d'une barque</span> ou <span class='text-bolder'>au bord du lac</span>, je consacre des matinées à la pêche, privilégiant souvent la capture de <span class='text-bolder'>perches</span> en raison de leur abondance et facilité à être pêchées. <br/>En tant que <span class='text-bolder'>loisir</span>, je veille à <span class='text-bolder'>relâcher immédiatement tout poisson pris</span>, dans un souci de <span class='text-bolder'>respect de l'animal</span> et de <span class='text-bolder'>préservation de l'écosystème</span>.",
+      ],
+    ],
   },
   en: {
     presentation:
@@ -287,7 +287,7 @@ export const data = {
         C_Gastro,
         "https://www.c-gastronomie.fr/",
         "Waiter Fixed-Term Contract",
-        "Waiter at \"Le Libellule\" restaurant, Annecy, operated by C-Gastronomie, a partner establishment of Paul Bocuse.<span class='text-bolder'><br/><br/>Introduction:</span> The Libellule, a boat-restaurant in Annecy, offers an exceptional gastronomic experience. Sailing on the lake, it blends refined cuisine with enchanting scenery. Our chefs create local delights, and our waiters are pleasant and courteous, turning each meal into a memorable adventure. Embark on the Libellule for a perfect fusion of culinary and visual pleasures, unique to Annecy.",
+        "Waiter at \"Le Libellule\" restaurant, Annecy, operated by C-Gastronomie, a partner establishment of Paul Bocuse.<span class='text-bolder'><br/><br/>Restaurant presentation :</span> The Libellule, a boat-restaurant in Annecy, offers an exceptional gastronomic experience. Sailing on the lake, it blends refined cuisine with enchanting scenery. Our chefs create local delights, and our waiters are pleasant and courteous, turning each meal into a memorable adventure. Embark on the Libellule for a perfect fusion of culinary and visual pleasures, unique to Annecy.",
         [],
         [
           "Good Manners",
@@ -298,7 +298,7 @@ export const data = {
         ],
       ],
     ],
-    header: ["About", "More on me", "Contact"],
+    header: ["About me", "More about me", "Socials"],
     formation: [
       [
         "Université Savoie Mont-Blanc, Annecy",
@@ -318,7 +318,7 @@ export const data = {
         "EPITA, Lyon",
         "Preparatory cycle at the same engineering school",
         [
-          "<span class='text-bolder'>Level</span> : Reoriented after the first year.",
+          "<span class='text-bolder'>Level</span> : Reoriented after the first year.</br>This training course was more theoretical than practical and wasn't for me.",
         ],
         [2021, 2020],
         [
@@ -347,21 +347,21 @@ export const data = {
       "https://drive.google.com/file/d/1gVYRY4EYzuaYQcZ2_LYoVlUVNMhpZKE5/view?usp=sharing",
     ],
     feed: [
-  [
-    "../../public/onairfitness-removebg-preview.png",
-    "Muscle Strengthening",
-    "Muscle strengthening is one of my essential passions. I am committed to an intense training program designed by a coach, aiming for muscle hypertrophy. My goal is to reach my natural physical maximum without using anabolic steroids, emphasizing discipline, perseverance, and respecting my body. I invest 5 to 6 days a week in this quest for self-improvement while ensuring controlled nutrition to achieve these goals."
-  ],
-  [
-    "../../public/planeVideo.MP4",
-    "Pilotage of Aircraft",
-    "In the process of obtaining my Private Pilot License (PPL) at Lyon Bron Airport (Les Ailes Lyonnaises), flying remains a passion that I initially considered as a career before turning to computer science. However, the Covid-19 pandemic led me to reconsider this path, choosing to make flying a leisure activity due to increased professional instability in the current context. Despite this change of course, I maintain my passion while exploring other professional opportunities better suited to the current reality."
-  ],
-  [
-    "../",
-    "Fishing",
-    "Introduced to fishing by my father and guided by my grandfather's experience, I continue this activity in Annecy. Whether on a boat or by the lake, I dedicate mornings to fishing, often preferring to catch perch due to their abundance and ease of capture. As a leisure activity, I make sure to immediately release any caught fish, out of concern for animal respect and ecosystem preservation."
-  ]
-]
+      [
+        "https://i.ibb.co/3vfngfV/onairfitness-removebg-preview.png",
+        "Muscle Strengthening",
+        "Muscle strengthening is one of my essential passions. I am committed to an intense training program designed by a coach, aiming for muscle hypertrophy. My goal is to reach my natural physical maximum without using anabolic steroids, emphasizing discipline, perseverance, and respecting my body. I invest 5 to 6 days a week in this quest for self-improvement while ensuring controlled nutrition to achieve these goals.",
+      ],
+      [
+        "",
+        "Pilotage of Aircraft",
+        "In the process of obtaining my Private Pilot License (PPL) at Lyon Bron Airport (Les Ailes Lyonnaises), flying remains a passion that I initially considered as a career before turning to computer science. However, the Covid-19 pandemic led me to reconsider this path, choosing to make flying a leisure activity due to increased professional instability in the current context. Despite this change of course, I maintain my passion while exploring other professional opportunities better suited to the current reality.",
+      ],
+      [
+        "../",
+        "Fishing",
+        "Introduced to fishing by my father and guided by my grandfather's experience, I continue this activity in Annecy. Whether on a boat or by the lake, I dedicate mornings to fishing, often preferring to catch perch due to their abundance and ease of capture. As a leisure activity, I make sure to immediately release any caught fish, out of concern for animal respect and ecosystem preservation.",
+      ],
+    ],
   },
 };
