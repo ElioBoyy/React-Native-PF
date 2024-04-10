@@ -166,7 +166,7 @@ export const data = {
     CV: [
       "Téléchargez mon CV juste",
       "ICI",
-      "https://drive.google.com/file/d/1FaQwowGFb9tvBQX02BVcir_EyJCGIFej/view?usp=sharing",
+      "https://drive.google.com/file/d/1cEgQVzG6lOrNBD5MptyVMXit94d0gdqs/view?usp=sharing",
     ],
     feed: [
       [
@@ -344,7 +344,7 @@ export const data = {
     CV: [
       "Download my resume just",
       "HERE",
-      "https://drive.google.com/file/d/1gVYRY4EYzuaYQcZ2_LYoVlUVNMhpZKE5/view?usp=sharing",
+      "https://drive.google.com/file/d/1cEgQVzG6lOrNBD5MptyVMXit94d0gdqs/view?usp=sharing",
     ],
     feed: [
       [
@@ -354,7 +354,7 @@ export const data = {
       ],
       [
         "",
-        "Pilotage of Aircraft",
+        "Airplane piloting",
         "In the process of obtaining my Private Pilot License (PPL) at Lyon Bron Airport (Les Ailes Lyonnaises), flying remains a passion that I initially considered as a career before turning to computer science. However, the Covid-19 pandemic led me to reconsider this path, choosing to make flying a leisure activity due to increased professional instability in the current context. Despite this change of course, I maintain my passion while exploring other professional opportunities better suited to the current reality.",
       ],
       [
