@@ -7,7 +7,7 @@ import { technosTableau } from "./techno";
 export const data = {
   fr: {
     presentation:
-      "<span class='text-bolder'>Développeur étudiant</span> en 3e année de BUT informatique, passionné par la création de <span class='text-bolder'>sites web</span> et d'<span class='text-bolder'>applications</span>, prêt à créer le",
+      "<span class='text-bolder'>Développeur junior</span> étudiant à l'<span class='text-bolder'>ESGI</span> en <span class='text-bolder'>mastère d'ingénierie du web</span>, passionné par la création de <span class='text-bolder'>sites web</span> et d'<span class='text-bolder'>applications</span>, prêt à créer le",
     presentationHL: "<p id='presentation-futur-numerique'>Futur Numérique</p>",
     "text-parallelepiped": [
       "Mes experiences professionnelles",
@@ -188,7 +188,7 @@ export const data = {
   },
   en: {
     presentation:
-      "Third-year <span class='text-bolder'>computer science student</span>, passionate about creating <span class='text-bolder'>websites</span> and <span class='text-bolder'>applications</span>, ready to shape the",
+      "<span class='text-bolder'>Junior Developer</span> studying at <span class='text-bolder'>ESGI</span> in <span class='text-bolder'>Web Engineering Master's</span>, passionate about creating <span class='text-bolder'>websites</span> and <span class='text-bolder'>applications</span>, ready to create the",
     presentationHL: "<p id='presentation-futur-numerique'>Digital Future</p>",
     "text-parallelepiped": ["My professional experience", "My school career"],
     "job-articles": [
