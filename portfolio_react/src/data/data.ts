@@ -2,6 +2,7 @@ import USMB from "../../public/USMB.svg";
 import Allegro from "../../public/Allegro_MicroSystems_logo.svg";
 import C_Gastro from "../../public/logo-c-gastronomie.svg";
 import MSPortfolio from "../../public/ms.svg";
+import ITSystemes from "../../public/itsystemes.svg";
 import { technosTableau } from "./techno";
 
 export const data = {
@@ -14,6 +15,30 @@ export const data = {
       "Mon parcours scolaire",
     ],
     "job-articles": [
+      [
+        "IT Systèmes",
+        ITSystemes,
+        "https://www.itsystemes.fr/",
+        "Développeur fullstack en stage",
+        "<span class='text-bolder'>Stage</span> réalisé avec un stack <span class='text-bolder'>React TypeScript</span> pour le front et <span class='text-bolder'>Java Correto 11</span> pour le back.<br/><br/>Premiere mission : automatiser la comptabilité des commerciaux de l'entreprise en créant un excel dynamique qui se met à jour automatiquement en fonction des ventes. J'ai utilisé le CRM Salesforce et l'outil de comptabilité Pennylane pour mener à bien ce projet.<br/><br/>Deuxième mission : améliorer le front et les fonctionnalités du logiciel FlexFlow dont est éditeur IT Systèmes. J'ai évolué à la fois sur le front en React et sur le backend en Java.<br/><br/>Troisième mission : automatiser le transfert des missions saisies sur l'CRM Salesforce vers un logiciel externe de gestion de missions et d'heures des ingénieurs techniques nommé Fuzeo.",
+        [
+          technosTableau.react,
+          "Java",
+          "SalesForce",
+          "Pennylane",
+          "FlexFlow (ESB / ETL)",
+          "Fuzeo",
+          technosTableau.typescript,
+          technosTableau.vscode,
+          technosTableau.git,
+          "Clean Code",
+          "Clean Architecture",
+        ],
+        ["Travail en équipe", "Communication", "Méthodes Agile"],
+        [
+          "https://drive.google.com/file/d/1RJhuvix4Jp38LtWQTBEE3__CB5Y34qA5/view?usp=sharing",
+        ],
+      ],
       [
         "Portfolio",
         MSPortfolio,

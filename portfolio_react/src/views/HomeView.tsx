@@ -78,14 +78,15 @@ function HomeView({ langue }: { langue: string }) {
           style={{
             height: "20vh",
             position: "absolute",
-            background: "linear-gradient(to bottom, transparent 0%, #fdf7fd 70%)",
+            background:
+              "linear-gradient(to bottom, transparent 0%, #fdf7fd 70%)",
             top: "100vh",
             width: "100vw",
             transform: "translate(0,-100%)",
             zIndex: "5555",
           }}
         />
-        ) : (
+      ) : (
         <></>
       )}
 
@@ -165,7 +166,7 @@ function HomeView({ langue }: { langue: string }) {
                   dangerouslySetInnerHTML={{
                     __html:
                       data.fr["text-parallelepiped"][
-                      controlFormaOrExpProText % 2
+                        controlFormaOrExpProText % 2
                       ],
                   }}
                 ></p>
@@ -175,7 +176,7 @@ function HomeView({ langue }: { langue: string }) {
                   dangerouslySetInnerHTML={{
                     __html:
                       data.en["text-parallelepiped"][
-                      controlFormaOrExpProText % 2
+                        controlFormaOrExpProText % 2
                       ],
                   }}
                 ></p>

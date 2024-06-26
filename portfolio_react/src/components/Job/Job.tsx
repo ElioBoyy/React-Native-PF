@@ -110,9 +110,9 @@ function Job({ job, langage }: JobProps) {
                         <p>Visit the GitHub repo</p>
                       )
                     ) : langage === "fr" ? (
-                      <p>Télécharger ma lettre de recommandation</p>
+                      <p>Télécharger ma fiche de synthèse</p>
                     ) : (
-                      <p>Download my reference letter</p>
+                      <p>Download my summary sheet</p>
                     )}
                   </a>
                 )
